@@ -10,7 +10,7 @@
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC)
 
 <details>
-<summary>🌐 네트워크 기초</summary>
+<summary>🌐 네트워크 기초</summary> 
 
 - 🔗 [OSI 7계층 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/OSI%207계층%20정리)
 - 🔗 [IPv4 주소 체계와 서브넷 마스크 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/IPv4%20주소%20체계와%20서브넷%20마스크%20정리)
