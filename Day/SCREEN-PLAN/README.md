@@ -1,11 +1,6 @@
-### DEVELOPMENT-ENVIRONMENT
+### SCREEN-PLAN
 ---
 
-- draw io SQL 연동
-- LINUX / Putty 
-- LINUX
-- LINUX / Git
-- Git
-- ppt 1차 시험
-- JDK 
-- ppt 2차 시험
+- git branch / sourcetree / 유스케이스
+- 플로우차트 피그마 화면구성
+- 화면구성
