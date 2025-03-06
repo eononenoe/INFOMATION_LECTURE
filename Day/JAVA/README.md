@@ -15,11 +15,13 @@
 
 - Day_40
   - 01
+    
     - 정리 & 문제
     - TypeChange
     - StringTypeChange
     - 정리 & 문제
   - 02
+    
     - Scanner
     - Basic
     - Ex문제
