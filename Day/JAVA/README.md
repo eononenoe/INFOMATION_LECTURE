@@ -1,10 +1,65 @@
-### >SW_BASIC
+### JAVA
 ---
 
-- 네트워크 기초 계층
-- 데이터링크 네트워크계층 전송계층 계층 정리
-- ipv4 cisco
-- cisco 스태틱 라우팅
--  cisco /  개발자환경구축
-- MySQL / 데이터베이스 DDL DCL DML
-- DDL / DML / 데이터베이스 구축 절차
+- Day_38
+  - Java 설명
+  - SystemOut
+  - 진수
+  - 음수
+  - 변수자료형
+  - 자료형
+    
+- Day_39
+  - 자료형
+  - 상수
+
+- Day_40
+  - 01
+    
+    - 정리 & 문제
+    - TypeChange
+    - StringTypeChange
+    - 정리 & 문제
+  - 02
+    
+    - Scanner
+    - Basic
+    - Ex문제
+    - Percent
+    - BitArith
+    - ShiftArch
+    
+- Day_41
+  - 정리 & 문제
+  - If
+  - Switch
+  - While
+ 
+- Day_42
+  - While
+
+- Day_43
+  - While
+  - Continue_Break
+  - For
+  - 기타반복처리
+  - INFO
+  - Main
+  - Person
+  - PersonMain
+  - MethodMain
+  - LocalVarMain
+  - MethodOverloadingMain
+  - 가변인자
+  - ConstructorMain
+
+- Day_44
+  - 정리
+  - Ex문제
+  - 정보은닉
+  - 캡슐화
+  - This
+  - StringClass
+  - Ex문제
+  - ArrayMain
+  - ClassArrayMain
