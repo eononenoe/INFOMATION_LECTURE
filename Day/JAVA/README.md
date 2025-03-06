@@ -1,7 +1,7 @@
 ### JAVA
 ---
 
-- Java
+- Day_38
   - Java 설명
   - SystemOut
   - 진수
@@ -9,11 +9,11 @@
   - 변수자료형
   - 자료형
     
-- Java
+- Day_39
   - 자료형
   - 상수
 
-- Java
+- Day_40
   - 01
     - 정리 & 문제
     - TypeChange
@@ -27,16 +27,16 @@
     - BitArith
     - ShiftArch
     
-- Java
+- Day_41
   - 정리 & 문제
   - If
   - Switch
   - While
  
-- Java
+- Day_42
   - While
 
-- Java
+- Day_43
   - While
   - Continue_Break
   - For
@@ -51,7 +51,7 @@
   - 가변인자
   - ConstructorMain
 
-- Java
+- Day_44
   - 정리
   - Ex문제
   - 정보은닉
