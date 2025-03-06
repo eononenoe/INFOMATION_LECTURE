@@ -1,7 +1,7 @@
 ### JAVA
 ---
 
-- Java
+1. Java
   - Java 설명
   - SystemOut
   - 진수
@@ -9,9 +9,9 @@
   - 변수자료형
   - 자료형
     
-- Java
+2. Java
   - 자료형
   - 상수
 
-- Java
+3. Java
   
