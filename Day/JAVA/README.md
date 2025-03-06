@@ -3,7 +3,7 @@
 
 - Java
   - Java 설명
-  - SysemOut
+  - SystemOut
   - 진수
   - 음수
   - 변수자료형
