@@ -1,38 +1,103 @@
 # DEVELOPMENT-ENVIRONMENT
 ---
 
-- draw io SQL 연동
-- LINUX / Putty 
-- LINUX
-- LINUX / Git
-- Git
-- ppt 1차 시험
-- JDK 
-- ppt 2차 시험
-
 - ## Day_08
-  - 
+  - draw.io 설치
+  - ERD 1:1 예제
+  - ERD 1:N 예제
+  - ERD N:M 예제
+  - SQL Diagram
 
 - ## Day_09
-  - 
+  - 01
+    - SERVER / CLIENT
+    - OS
+    - VMware 설치
+    - VMware Network Editor
+    - VMware Virtual Machine
+    - Putty 설치
+    - VMware 인터넷 설정
+  - 02
+    - VMware Ping 확인
+    - Snapshot
+    - Putty 설정
+    - 패스워드 지정
+    - 재부팅 , 종료
+    - 리눅스 런레벨
+    - 명령어
 
 - ## Day_10
-  - 
+  - 01
+    - ls(List) : 파일&디렉토리 목록 출력
+    - mkdir(Make Directory) : 디렉토리 생성 명령어
+    - man(manual) : 명령어 정보 확인
+    - touch : 파일생성, 파일의 시간을 변경
+    - cp(copy) : 파일 복사
+  - 02
+    - mv : 파일 디렉토리 이동(옵션x)
+    - rm(remove) : 파일&디렉토리 삭제
+    - cat : 문서 전체 출력
+    - head&tail : 위&아래에서 시작해서(기본10줄) 출력
+    - more : 화면크기만큼 출력
+    - 파이프라인 / 리다이렉션
+    - 논리연산자
+    - 리다이렉션
+    - 파이프라인
 
 - ## Day_11
-  - 
+  - 01
+    - VI
+    - 이동모드 , 편집모드 , 실행모드
+    - 권한 , 허가권 , 소유권
+    - 정리
+  - 02
+    - 계정
+    - 리눅스 계정관련 파일
+    - 계정
+    - 무결성 알고리즘의 특징
+    - 계정 생성
 
 - ## Day_12
-  - 
+  - 01
+    - usermod
+    - userdel
+    - 프로세스
+  - 02
+    - Git
+    - 버전 관리
+    - Git의 작동 구조
+    - Git 설치
+    - Git 계정 설정
+    - Git 로그 확인
+    - 파일 추가
+    - Git 명령어
+    - GitHub
 
 - ## Day_13
-  - 
+  - Github Pull requests
+  - Git 협업 설정
+  - Git - Github 업로드
+  - Git Projects
 
 - ## Day_14
-  - 
+  - PPT 제작
+  - Java Codding Test
 
 - ## Day_15
-  - 
+  - JDK 구버전 설치
+  - Tomcat 설치
+  - Java 버전 변동 시 설정
+  - Eclipse + TomCat
+  - git 설정
+  - Github 연동
 
 - ## Day_16
-  - 
+  - 01
+    - PPT 제작
+    - Java Codding Test
+  - 02
+    - 프로그램
+    - Sourcetree Commit
+    - Sourcetree Reset Hard
+    - Sourcetree Merge
+    - Git 연동
