@@ -14,7 +14,7 @@ for(object : obj ) = : 설명 = obj를 object에 하나하나 담겠다
 obj.get(1) = list와 같다 0 , 1 , 2 중 1번째 값을 꺼내겠다 
 ```
 
----
+--- 
 
 > **C05MainParam**
 > 
