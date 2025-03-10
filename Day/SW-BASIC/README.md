@@ -10,22 +10,92 @@
 - DDL / DML / 데이터베이스 구축 절차
   
 - ## Day_01
-  - 
+  - 01 
+    - NETWORK
+    - 토폴로지 (장치를 연결하는 통로) 확인
+    - NETWORK 종류
+    - 인터넷 , PROTOCOL이란
+    - 구문(Syntax) , 의미(Meaning) , 타이밍(Timing)
+    - 네트워크 모델 , 네트워크 모델의 변화
+    - OSI 모델
+  - 02
+    - 물리계층
+    - 신호란? , 신호전달에 필요한 요소
+    - Cable , 리피터 , 허브
 
 - ## Day_02
-  - 
+  - 01
+    - 데이터 링크 계층
+  - 02
+    - 네트워크 계층
+  - 03
+    - 전송 계층
+  - 04
+    - OSI 계층
 
 - ## Day_03
-  -
+  - 01
+    - IPv4 , BIT/BYTE
+    - NETWORK IP , HOST IP
+    - SUBNET MASK
+    - 클래스풀 , 클래스리스 (CLassless)
+    - IPv4 통신방식
+  - 02
+    - Cisco
 
 - ## Day_04
-  - 
+   - 01
+    - Static Routing
+    - 정적 , 동적
+    - Static + Default 혼합
+  - 02   
+    - Sever
+    - DNS Server(컴퓨터) , Service(프로그램) , System(환경)
+    - HTTP
 
 - ## Day_05
-  - 
+  - 01
+    - Routing Protocol
+    - 동적
+    - AS , ASBR
+    - Distance Vector
+    - IGP , EGP
+    - 링크상태 라우팅 알고리즘
+    - RIP
+  - 02   
+    - 미들웨어
+    - JAVA 삭제
+    - JDK 설치
+    - Tomcat 설치
+    - Eclipse 설치
 
 - ## Day_06
-  - 
+  - 01
+    - 정보 피라미드
+    - 데이터베이스
+    - DBMS , DBMS의 종류 , DBMS의 분류
+    - 관계형 DBMS
+    - SQL
+    - MySQL 설치
+  - 02
+    - DDL(Data Definition Language)
+    - DML(Data Manipulation Language)
+    - DCL(Data Control Language)
+  - 03
+    - MySQL
+    - DB 구축
+    - 테이블 구축
+    - Cmd 행 추가
+    - Cmd 행 수정
+    - Cmd Insert , Cmd Update , Cmd Delete
 
 - ## Day_07
-  - 
+  - 01
+    - DDL/DML
+    - User
+    - User Cmd 연결
+    - Cmd User 만들기
+    - DCL
+  - 02
+    - 데이터 베이스 구축 절차
+    - 1:1관계 , 1:N 관계 , N:M 관계
