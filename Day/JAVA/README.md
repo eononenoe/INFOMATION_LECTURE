@@ -74,3 +74,28 @@
   - MethodOverriding
   - Ex문제
   - Ex문제
+ 
+- ## Day_46
+  - 정리
+  - UpDownCastingMain
+  - Ex문제
+  - AbstractMain
+  - Won2Yuan
+  - InterfaceMain
+
+- ## Day_47
+  - InterfaceMain
+  - ObjectMain
+  - WrapperMain
+  - DateMain
+  - SimpleDateFormatMain
+  - LocalDateTimeFormatMain
+  - NullpointerExceptionMain
+  - ArrayIndexBoundExceptionMain
+  - ClassCastExceptionMain
+  - ExceptionMain
+  - ThrowAndThrowsMain
+  - GenericMain
+  - Ex문제
+
+
