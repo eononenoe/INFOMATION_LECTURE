@@ -2,7 +2,7 @@
 ---
 
 - ## Day_17
-  - git branch
+  - Git branch
   - Master Branch
   - Develop Branch
   - Feature Branch
