@@ -36,7 +36,7 @@
     - Cisco
 
 - ## Day_04
-   - 01
+  - 01
     - Static Routing
     - 정적 , 동적
     - Static + Default 혼합
