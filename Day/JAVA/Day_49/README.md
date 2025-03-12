@@ -394,7 +394,7 @@ public class C02높이입력다이아몬드 {
 
 ---
 
-> **main**
+> **Main**
 > 
 
 ```java
