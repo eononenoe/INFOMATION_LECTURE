@@ -123,3 +123,10 @@
   - FileOutputStreamMain
   - FileCopyMain
   - SwingEventMain
+
+- ## Day_50
+  - URLStreamMain
+  - JsoupMain
+  - SelenumAPIMain
+  - RestRequestResponseMain
+  - Ex문제
