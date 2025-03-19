@@ -154,3 +154,20 @@
   - SwingMain, Worker1, Worker2
   - ThreadMain_Ex_문제코드
   - Ex_임계영역설정
+
+- ## Day_54
+  - ServerSendThread
+  - ServerRecvThread
+  - ClientSendThread
+  - Server
+  - Client
+  - ClientRecvThread
+  - ServerRecvThread
+  - ClientUI
+  - ServerUI
+  - C00INFO
+  - C01BASIC
+  - C02BASIC
+  - C00INFO
+  - C01BASIC
+  - C02BASIC
