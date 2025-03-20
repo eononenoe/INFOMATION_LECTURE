@@ -171,3 +171,17 @@
   - C00INFO
   - C01BASIC
   - C02BASIC
+
+- ## Day_55
+  - PPT
+  - LAMDA
+  - 스트림_Info
+  - StreamMain
+  - FlatMap
+  - Distinct
+  - Sorted
+  - Limited
+  - Skip
+  - 최종연산
+  - 함수형_Info
+  - FunctionalInterfaceMain
