@@ -1,4 +1,27 @@
 # JAVA
+
+## 절차지향 문법
+---
+## 객체지향 문법
+- 객체 일반
+  - 속성 / 기능(생성자, 일반함수)
+  - 오버로딩
+  - final, static, 한정자 등
+
+- 상속-1: 기본, 오버라이딩, 업/다운 캐스팅
+- 상속-2: 추상클래스, 인터페이스
+
+##기타
+- JAVA API 등 (Object...)
+- 예외처리
+- 제너릭
+- 컬렉션
+- SWING
+- JDBC
+- 디자인패턴
+- 소켓 x → WEB SOCKET, STOMP, WEBFLEX
+- 스레드 x (톰캣이 알아서 처리 딱히 구현할 일이 없음)
+- 람다/스트림/함수형인터페이스
 ---
 
 - ## Day_38
@@ -185,3 +208,12 @@
   - 최종연산
   - 함수형_Info
   - FunctionalInterfaceMain
+
+- ## Day_56
+  - FunctionalInterfaceMain
+  - Ex문제
+  - FunctionalInterfaceMain
+  - Ex문제
+  - 어노테이션_Info
+  - CustomAnnotation
+  - Main
