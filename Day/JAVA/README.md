@@ -256,3 +256,11 @@
     - ControllerTest
     - DAOTest
     - ServiceTest
+
+- ## Day_62
+  - JSP 구동환경 만들기
+    - TomCat 설치
+    - Eclipse
+    - Eclipse 프로젝트 생성
+    - Emmit 설치
+    - Tern 설치
