@@ -537,6 +537,9 @@ out.println("<script> alert('LOGOUT 성공! LOGIN PAGE로 이동합니다.');loc
 
 ---
 
+# 03
+
+---
 > **getCookie**
 > 
 
