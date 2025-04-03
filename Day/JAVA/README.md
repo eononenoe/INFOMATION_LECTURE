@@ -87,7 +87,7 @@
 
 - ## Day_45
   - 정리
-  - MainParam
+  - MainParam 
   - Ex문제
   - StaticMain
   - SingletonPatton
