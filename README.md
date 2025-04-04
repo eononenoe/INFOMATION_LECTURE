@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/2fa11960-1e4c-428f-8cdf-6fec41dd508b)# 📘 INFOMATION_LECTURE
+# 📘 INFOMATION_LECTURE
 
 > 💡 **정보처리산업기사 과정평가형** 내용을 정리한 저장소입니다.  
 
