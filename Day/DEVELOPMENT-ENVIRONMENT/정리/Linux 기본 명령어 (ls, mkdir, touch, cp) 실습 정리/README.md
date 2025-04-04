@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 Linux 기본 명령어 (ls, mkdir, touch, cp) 실습 정리
 
 ---

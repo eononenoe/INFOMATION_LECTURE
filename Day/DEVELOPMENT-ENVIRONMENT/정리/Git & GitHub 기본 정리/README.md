@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 Git & GitHub 기본 정리
 
 ---

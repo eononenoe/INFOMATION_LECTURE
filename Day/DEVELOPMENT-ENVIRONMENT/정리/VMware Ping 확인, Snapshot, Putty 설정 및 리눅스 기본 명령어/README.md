@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 VMware Ping 확인, Snapshot, Putty 설정 및 리눅스 기본 명령어 정리
 
 ---

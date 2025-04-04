@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 LINUX, SERVER/CLIENT, VMware & Putty 설치 정리
 
 ---

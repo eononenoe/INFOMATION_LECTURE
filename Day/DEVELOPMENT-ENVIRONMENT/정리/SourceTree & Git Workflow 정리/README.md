@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 SourceTree & Git Workflow 정리
 
 ---

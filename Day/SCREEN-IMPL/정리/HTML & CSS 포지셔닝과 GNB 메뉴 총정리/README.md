@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 HTML & CSS 포지셔닝과 GNB 메뉴 총정리
 
 ---

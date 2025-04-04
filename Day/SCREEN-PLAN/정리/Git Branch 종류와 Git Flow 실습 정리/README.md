@@ -1,4 +1,3 @@
-~~~markdown
 # 📚 Git Branch 종류와 Git Flow 실습 정리
 
 ---
