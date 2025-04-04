@@ -80,4 +80,5 @@
       - index
       - selectAll
       - update_form 
+      - update
     -  DBUtils
