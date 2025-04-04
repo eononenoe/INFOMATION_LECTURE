@@ -63,3 +63,21 @@
     - getCookie
     - setCookie
     - deleteCookie
+
+- ## Day_66
+    - login_form
+    - login
+    - logout
+    - main
+    - 01EL
+      - form
+      - result
+    - 02JSTL
+      - getCookie
+    - USER
+      - join_form
+      - join
+      - index
+      - selectAll
+      - update_form 
+    -  DBUtils
