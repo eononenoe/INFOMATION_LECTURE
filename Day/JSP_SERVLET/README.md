@@ -1,6 +1,15 @@
 # DATABASE
 ---
 
+
+- ## Day_62
+  - JSP 구동환경 만들기
+    - TomCat 설치
+    - Eclipse
+    - Eclipse 프로젝트 생성
+    - Emmit 설치
+    - Tern 설치
+
 - ## Day_63
   - 선언문
   - 스트립틀릿
