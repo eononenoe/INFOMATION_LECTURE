@@ -109,34 +109,34 @@
 ## 📂 DATABASE 정리
 
 ### 📘 SQL 기초 다지기
-- 🔗 [SQL 기본 실습 정리](#)
+- 🔗 [SQL 기본 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DATABASE/%EC%A0%95%EB%A6%AC/SQL%20%EA%B8%B0%EB%B3%B8%20%EC%8B%A4%EC%8A%B5%20%EC%A0%95%EB%A6%AC)
 
 ### 🚀 SQL 심화 연습
-- 🔗 [SQL 기본 + 견연 실습 정리](#)
+- 🔗 [SQL 기본 + 견연 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DATABASE/%EC%A0%95%EB%A6%AC/SQL%20%EA%B8%B0%EB%B3%B8%20%20%2B%20%EA%B2%AC%EC%97%B0%20%EC%8B%A4%EC%8A%B5%20%EC%A0%95%EB%A6%AC)
 
 ## 📂 JSP_SERVLET 정리
 
 ### 🛠 개발 환경 세팅
-- 🔗 [JSP 구동환경 셋팅 가이드 (Tomcat + Eclipse)](#)
+- 🔗 [JSP 구동환경 셋팅 가이드 (Tomcat + Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EA%B5%AC%EB%8F%99%ED%99%98%EA%B2%BD%20%EC%85%8B%ED%8C%85%20%EA%B0%80%EC%9D%B4%EB%93%9C%20(Tomcat%20%2B%20Eclipse))
 
 ### 📘 기본 문법과 개념
-- 🔗 [JSP 스크립트 요소 정리](#)
-- 🔗 [JSP 액션 태그 정리](#)
-- 🔗 [JSP 지시자 정리](#)
-- 🔗 [JSP 쿠키 정리](#)
-- 🔗 [JSP 내장 객체 정리](#)
+- 🔗 [JSP 스크립트 요소 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%EC%9A%94%EC%86%8C%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 액션 태그 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%95%A1%EC%85%98%20%ED%83%9C%EA%B7%B8%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 지시자 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%A7%80%EC%8B%9C%EC%9E%90%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 쿠키 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%BF%A0%ED%82%A4%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 내장 객체 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EB%82%B4%EC%9E%A5%20%EA%B0%9D%EC%B2%B4%20%EC%A0%95%EB%A6%AC)
 
 ### 🔄 요청과 응답 흐름 처리
-- 🔗 [JSP 문법 및 Request 처리 정리](#)
-- 🔗 [JSP 로그인 처리 & 파일 다운로드 정리](#)
-- 🔗 [JSP 로그인 회원 관리 시스템 정리](#)
-- 🔗 [JSP 세션 정리](#)
-- 🔗 [JSP 이용한 동적 Nav 생성](#)
+- 🔗 [JSP 문법 및 Request 처리 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EB%AC%B8%EB%B2%95%20%EB%B0%8F%20Request%20%EC%B2%98%EB%A6%AC%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 로그인 처리 & 파일 다운로드 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%EC%B2%98%EB%A6%AC%20%26%20%ED%8C%8C%EC%9D%BC%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 로그인 회원 관리 시스템 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EB%A1%9C%EA%B7%B8%EC%9D%B8%20%ED%9A%8C%EC%9B%90%20%EA%B4%80%EB%A6%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 세션 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%84%B8%EC%85%98%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP 이용한 동적 Nav 생성](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EB%8F%99%EC%A0%81%20Nav%20%EC%83%9D%EC%84%B1)
 
 ### 🗄 데이터베이스 연동
-- 🔗 [JSP JDBC 정리](#)
-- 🔗 [JSP DBCP 정리](#)
-- 🔗 [JSP JavaBean 정리](#)
+- 🔗 [JSP JDBC 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JDBC%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP DBCP 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20DBCP%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JSP JavaBean 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JavaBean%20%EC%A0%95%EB%A6%AC)
 
 ---
 
