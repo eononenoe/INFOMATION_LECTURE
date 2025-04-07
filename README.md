@@ -133,6 +133,9 @@
 - 🔗 [JSP 세션 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%84%B8%EC%85%98%20%EC%A0%95%EB%A6%AC)
 - 🔗 [JSP 이용한 동적 Nav 생성](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EB%8F%99%EC%A0%81%20Nav%20%EC%83%9D%EC%84%B1)
 
+### 🏗 JSP 프로젝트 기본 구조
+- 🔗 [JSP + Java + DB 연동 프로젝트 구조 설명]()
+
 ### 🗄 데이터베이스 연동
 - 🔗 [JSP JDBC 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JDBC%20%EC%A0%95%EB%A6%AC)
 - 🔗 [JSP DBCP 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20DBCP%20%EC%A0%95%EB%A6%AC)
