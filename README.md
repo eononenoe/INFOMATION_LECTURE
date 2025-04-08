@@ -133,13 +133,14 @@
 - 🔗 [JSP 세션 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%84%B8%EC%85%98%20%EC%A0%95%EB%A6%AC)
 - 🔗 [JSP 이용한 동적 Nav 생성](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EB%8F%99%EC%A0%81%20Nav%20%EC%83%9D%EC%84%B1)
 
-### 🏗 JSP 프로젝트 기본 구조
-- 🔗 [JSP + Java + DB 연동 프로젝트 구조 설명](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20%2B%20Java%20%2B%20DB%20%EC%97%B0%EB%8F%99%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B5%AC%EC%A1%B0%20%EC%84%A4%EB%AA%85)
-
 ### 🗄 데이터베이스 연동
 - 🔗 [JSP JDBC 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JDBC%20%EC%A0%95%EB%A6%AC)
 - 🔗 [JSP DBCP 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20DBCP%20%EC%A0%95%EB%A6%AC)
 - 🔗 [JSP JavaBean 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JavaBean%20%EC%A0%95%EB%A6%AC)
+
+- ### 🏗 JSP 실기 연습
+- 🔗 [HRD 강사 관리 시스템 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/HRD%20%EA%B0%95%EC%82%AC%20%EA%B4%80%EB%A6%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%95%EB%A6%AC)
+- 🔗 [HRD 지역구 의원 투표 시스템 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/HRD%20%EC%A7%80%EC%97%AD%EA%B5%AC%20%EC%9D%98%EC%9B%90%20%ED%88%AC%ED%91%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%95%EB%A6%AC)
 
 ---
 
