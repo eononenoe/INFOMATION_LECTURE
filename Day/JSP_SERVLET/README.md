@@ -129,3 +129,45 @@
       - DBUtils
       - TeacherDto
       - index
+
+- ## Day_69
+  - 골프연습장 회원관리
+    - Utils
+      - DBUtils
+      - ClassDto
+      - Join1Dto
+      - Join2Dto
+      - MemberDto
+      - TeacherDto
+      - VoteDto
+    - 01
+      - index
+      - create
+      - delete
+      - read
+      - update
+    - 02
+      - index
+      - create
+      - delete
+      - read
+      - update
+    - 03
+      - index
+      - create
+      - delete
+      - read
+      - update
+    - 04
+      - index
+      - create
+      - delete
+      - read
+      - update
+  - 공통
+    - index
+    - template
+    - layouts
+      - Header
+      - Nav
+      - Footer
