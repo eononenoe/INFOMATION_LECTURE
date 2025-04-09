@@ -139,8 +139,8 @@
 - 🔗 [JSP JavaBean 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/JSP%20JavaBean%20%EC%A0%95%EB%A6%AC)
 
 - ### 🏗 JSP 실기 연습
-- 🔗 [HRD 강사 관리 시스템 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/HRD%20%EA%B0%95%EC%82%AC%20%EA%B4%80%EB%A6%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%95%EB%A6%AC)
-- 🔗 [HRD 지역구 의원 투표 시스템 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/HRD%20%EC%A7%80%EC%97%AD%EA%B5%AC%20%EC%9D%98%EC%9B%90%20%ED%88%AC%ED%91%9C%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%A0%95%EB%A6%AC)
+- 🔗 [02HRDKOREA 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/02HRDKOREA%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
+- 🔗 [03HRDKOREA 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/03HRDKOREA%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
 
 ---
 
