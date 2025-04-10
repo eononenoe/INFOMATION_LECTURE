@@ -103,14 +103,12 @@
 --- 
 
 <details>
-<summary>📂 SCREEN-IMPL 정리</summary>
-
-- 🔗 [HTML + CSS 학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/HTML_CSS)
-- 🔗 [JAVASCRIPT + HTML + CSS 학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
-
+<summary>📂 SCREEN-IMPL 정리</summary>  <br>
 <details>
+
 <summary>🎨 HTML & CSS 기초 및 실습</summary>
 
+- 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/HTML_CSS)
 - 🔗 [CSS Animation, Slider, Media Query 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/CSS%20Animation%20Slider%20Media%20Query%20정리)
 - 🔗 [CSS Motion Effects 정리 (Transition, Transform)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/CSS%20Motion%20Effects%20정리%20(Transition%20Transform3D%20Animation))
 - 🔗 [HTML & CSS 기본 구조 및 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20기본%20구조%20+%20심화%20실습)
@@ -123,7 +121,9 @@
 </details>
 <details>
 <summary>💻 JavaScript 기초 및 실습</summary>
-
+  
+- 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
+- 🔗 [JAVASCRIPT + HTML + CSS 학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
 - 🔗 [JavaScript 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JavaScript%20기초%20정리)
 - 🔗 [JS Bootstrap, Chart.js, GSAP, ScrollMagic 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20Bootstrap,Chart.js,GSAP,ScrollMagic%20실습%20모음)
 - 🔗 [JS DOM 탐색, 노드 생성 및 삭제, 동적 HTML 수정](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20DOM%20탐색,노드%20생성%20삭제,동기비동기%20개념)
