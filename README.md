@@ -142,6 +142,22 @@
 - 🔗 [02HRDKOREA 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/02HRDKOREA%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
 - 🔗 [03HRDKOREA 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/03HRDKOREA%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
 
+## 📂 SERVLET 정리
+
+### 🚀 기본 세팅 및 초기 구조
+- 🔗 [SERVLET 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC)
+- 🔗 [SERVLET INIT 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20INIT%20%EC%A0%95%EB%A6%AC)
+
+### 🛡️ 요청 처리 및 필터링
+- 🔗 [SERVLET FILTER 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20FILTER%20%EC%A0%95%EB%A6%AC)
+- 🔗 [SERVLET FILTER 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20FILTER%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
+
+### 🎯 고급 기능 및 이벤트 처리
+- 🔗 [SERVLET LISTENER 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20LISTENER%20%EC%A0%95%EB%A6%AC)
+
+### 🧪 실습 프로젝트 모음
+- 🔗 [SERVLET EX 프로젝트 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JSP_SERVLET/%EC%A0%95%EB%A6%AC/SERVLET%20EX%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%A0%95%EB%A6%AC)
+
 ---
 
 🛠 **꾸준히 업데이트 중입니다.**
