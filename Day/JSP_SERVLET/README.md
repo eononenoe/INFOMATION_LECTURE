@@ -200,3 +200,76 @@
     - C01Filter_Test.java
     - C02Filter_Test.java
     - UTF8_EncodingFilter.java
+
+- ## Day_70
+  - 06FILTER 프로젝트
+    - Filter
+      - C01Filter_Test.java
+      - C02Filter_Test.java
+      - UTF8_EncodingFilter.java
+      - LoginRedirectFilter.java
+      - PermissionFilter.java
+    - Servlet
+      - Home.java
+      - Join.java
+      - Login.java
+      - AdminMain.java
+      - ManagerMain.java
+      - UserMain.java
+    - Utils
+      - MysqlDbUtils.java
+      - OracleDBUtils.java
+      - UserDto.java
+    - Type
+      - Role.java
+    - webapp
+      - WEB-INF
+        - index.jsp
+        - main.jsp
+        - user
+          - join.jsp
+          - login.jsp
+          - admin.jsp
+          - manager.jsp
+          - user.jsp
+  - 07LISTENER 프로젝트
+    - Listener
+      - C01ServletContextListener.java
+      - C02ServletContextAttributeListener.java
+      - C03HttpSessionListener.java
+      - C04HttpSessionAttributeListener.java
+      - C05ServletRequestListener.java
+      - C06ServletRequestAttributeListener.java
+    - Servlet
+      - C02ListenerTest.java
+      - C03ListenerTest.java
+      - C05ListenerTest.java
+    - webapp
+      - index.jsp
+      - WEB-INF
+        - web.xml
+  - 08RESOURCE 프로젝트
+    - Servlets
+      - Home.java
+      - Join.java
+      - Login.java
+    - Utils
+      - MysqlDbUtils.java
+      - OracleDBUtils.java
+      - UserDto.java
+    - webapp
+      - index.jsp
+      - WEB-INF
+        - index.jsp
+        - main.jsp
+        - user
+          - join.jsp
+          - login.jsp
+        - lib
+          - mysql-connector-j-9.2.0.jar
+          - ojdbc6.jar
+        - web.xml
+      - META-INF
+        - context.xml
+
+

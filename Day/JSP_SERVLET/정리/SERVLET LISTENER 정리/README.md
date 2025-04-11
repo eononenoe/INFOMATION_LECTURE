@@ -1,137 +1,136 @@
-# 👂 서블릿 리스너 (Servlet Listener)
+# 📚 LISTENER 프로젝트 정리
 
 ---
 
 ## 📌 개요 (Overview)
 
-**서블릿 리스너(Servlet Listener)** 는  
-**서버에서 일어나는 특정 이벤트**를 자동으로 감지해서,  
-특정 동작을 하게 만들어주는 클래스입니다. 🛎️
+이 프로젝트는 **Servlet Listener(리스너)** 를 연습하는 예제야!  
+리스너는 서버에서 특정 이벤트(서버 시작, 세션 생성, 요청 처리 등)가 발생했을 때 **자동으로 감지해서** 동작하는 기술이야! 🛎️
 
-> 예를 들어 **웹 애플리케이션이 시작될 때**, **세션이 생성될 때**, **요청이 들어올 때**  
-> 자동으로 동작하는 코드가 필요하다면, 리스너를 사용합니다!
+**예시:**
+- 서버 시작 시 필요한 작업 미리 실행하기 🚀
+- 세션이 생성될 때 초기화 작업하기 🎫
 
 ---
 
 ## 💡 핵심 개념 요약 (Key Concepts)
 
-- **리스너**는 서버의 이벤트를 감지합니다. (앱 시작, 세션 생성, 요청 발생 등)
-- 리스너는 **인터페이스**를 구현하여 작성합니다.
-- 주요 리스너 종류:
-  - `ServletContextListener` : 웹 앱 시작/종료 감지
-  - `ServletContextAttributeListener` : context 속성 추가/변경/삭제 감지
-  - `HttpSessionListener` : 세션 생성/소멸 감지
-  - `HttpSessionAttributeListener` : 세션 속성 변경 감지
-  - `HttpSessionActivationListener` : 세션 활성화/비활성화 감지 (클러스터링 환경)
-  - `ServletRequestListener` : 요청 생성/소멸 감지
-  - `ServletRequestAttributeListener` : 요청 속성 변경 감지
-
-- 등록 방법:
-  - `@WebListener` 어노테이션 사용
-  - 또는 `web.xml` 파일에 설정
+| 역할 | 설명 |
+|:---|:---|
+| Listener (리스너) | 서버 이벤트(시작/종료/요청/세션 생성 등)를 감지하는 클래스 |
+| Servlet (서블릿) | 클라이언트 요청을 받아 실제 로직을 수행하는 클래스 |
+| JSP (웹페이지) | 사용자에게 보여지는 최종 화면 |
 
 ---
 
-## ⚠ 주의사항 (Cautions)
+## 🧪 리스너(Listener) 주석 추가 버전
 
-- 리스너는 서버 상태와 매우 밀접하게 연결되어 있어요.  
-  **잘못 작성하면 서버에 큰 영향을 줄 수 있습니다!** (예: 무한 루프, 대량 로깅 등 주의 🚨)
-- 필요한 이벤트에만 최소한으로 사용하도록 주의해요.
-- `init`, `destroy` 같은 메서드는 서버가 동작하거나 종료할 때 호출됩니다.
+---
+
+### 📄 C01ServletContextListener.java
+
+```java
+public void contextInitialized(ServletContextEvent sce) { 
+    // 서버 시작될 때 호출
+}
+public void contextDestroyed(ServletContextEvent sce) { 
+    // 서버 종료될 때 호출
+}
+```
+
+> 📌 **애플리케이션이 시작되거나 종료될 때 자동으로 호출된다.**
+
+---
+
+### 📄 C02ServletContextAttributeListener.java
+
+```java
+public void attributeAdded(ServletContextAttributeEvent event) { }
+public void attributeRemoved(ServletContextAttributeEvent event) { }
+public void attributeReplaced(ServletContextAttributeEvent event) { }
+```
+
+> 📌 **Application에 속성(Attribute)이 추가/삭제/변경될 때 호출된다.**
+
+---
+
+### 📄 C03HttpSessionListener.java
+
+```java
+public void sessionCreated(HttpSessionEvent se) { }
+public void sessionDestroyed(HttpSessionEvent se) { }
+```
+
+> 📌 **세션(Session)이 생성되거나 소멸될 때 호출된다.**
+
+---
+
+### 📄 C04HttpSessionAttributeListener.java
+
+```java
+public void attributeAdded(HttpSessionBindingEvent event) { }
+public void attributeRemoved(HttpSessionBindingEvent event) { }
+public void attributeReplaced(HttpSessionBindingEvent event) { }
+```
+
+> 📌 **세션 안에 속성이 추가/삭제/변경될 때 호출된다.**
+
+---
+
+### 📄 C05ServletRequestListener.java
+
+```java
+public void requestInitialized(ServletRequestEvent sre) { }
+public void requestDestroyed(ServletRequestEvent sre) { }
+```
+
+> 📌 **HTTP 요청이 생성되거나 종료될 때 호출된다.**
+
+---
+
+### 📄 C06ServletRequestAttributeListener.java
+
+```java
+public void attributeAdded(ServletRequestAttributeEvent event) { }
+public void attributeRemoved(ServletRequestAttributeEvent event) { }
+public void attributeReplaced(ServletRequestAttributeEvent event) { }
+```
+
+> 📌 **HTTP 요청 안에 속성이 추가/삭제/변경될 때 호출된다.**
+
+---
+
+## 💡 서블릿(Servlet) 핵심 요약
+
+- `C02ListenerTest` : Application 속성 추가 테스트
+- `C03ListenerTest` : 세션 속성 추가 테스트
+- `C05ListenerTest` : 요청 속성 추가 테스트
+
+---
+
+## 💡 JSP 파일 요약
+
+- `index.jsp` : 테스트 시작 페이지
+
+---
+
+## ⚠️ 주의사항 (Cautions)
+
+- **web.xml에 리스너 등록 필수**  
+- **이벤트가 발생해야 리스너가 호출된다** (예: 서버 재시작, 세션 생성)
+- **Attribute 변경 이벤트는 반드시 setAttribute()를 호출해야 발생**
 
 ---
 
 ## 🧪 예제 또는 비유 (Examples or Analogies)
 
-### 🛎️ 비유 : 호텔 매니저
-- 호텔 매니저는 손님이 체크인할 때, 체크아웃할 때 자동으로 기록을 남깁니다.
-- 매니저는 손님이 뭘 했는지 일일이 명령받지 않고, **이벤트(체크인/체크아웃)** 가 발생할 때 자동으로 반응합니다.
-
-👉 **리스너**는 웹 서버의 **매니저**와 같아요.  
-서버 안에서 일어나는 다양한 사건에 맞춰 자동으로 반응합니다!
-
----
-
-### 🛠️ 코드 예시 모음
-
-#### 1. 웹 애플리케이션 시작/종료 감지 (ServletContextListener)
-```java
-@WebListener
-public class MyContextListener implements ServletContextListener {
-    
-    @Override
-    public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("🌟 웹 애플리케이션 시작됨!");
-    }
-
-    @Override
-    public void contextDestroyed(ServletContextEvent sce) {
-        System.out.println("🛑 웹 애플리케이션 종료됨!");
-    }
-}
-```
-
----
-
-#### 2. 세션 생성/소멸 감지 (HttpSessionListener)
-```java
-@WebListener
-public class MySessionListener implements HttpSessionListener {
-    
-    @Override
-    public void sessionCreated(HttpSessionEvent se) {
-        System.out.println("🆕 세션 생성: " + se.getSession().getId());
-    }
-
-    @Override
-    public void sessionDestroyed(HttpSessionEvent se) {
-        System.out.println("❌ 세션 소멸: " + se.getSession().getId());
-    }
-}
-```
-
----
-
-#### 3. 요청 생성/소멸 감지 (ServletRequestListener)
-```java
-@WebListener
-public class MyRequestListener implements ServletRequestListener {
-    
-    @Override
-    public void requestInitialized(ServletRequestEvent sre) {
-        System.out.println("📥 요청 발생: " + sre.getServletRequest().getRemoteAddr());
-    }
-
-    @Override
-    public void requestDestroyed(ServletRequestEvent sre) {
-        System.out.println("📤 요청 종료");
-    }
-}
-```
-
----
-
-### 📝 리스너 등록 방법 정리
-
-#### 💬 어노테이션 방식
-```java
-@WebListener
-public class MyListener implements ServletContextListener {
-    ...
-}
-```
-
-#### 🗂️ web.xml 방식
-```xml
-<listener>
-    <listener-class>com.example.MyListener</listener-class>
-</listener>
-```
+- **Listener는 학교 종소리!**  
+  👉 종이 울리면 자동으로 수업 시작하거나 종료하듯 서버도 자동으로 이벤트를 감지해서 동작한다. 🔔
 
 ---
 
 ## ✅ 한 줄 요약 (1-Line Summary)
 
-> **서블릿 리스너는 서버 이벤트(앱 시작, 세션 생성 등)를 자동 감지해서 반응하는 귀여운 매니저 클래스다! 👂**
+> **서버의 이벤트를 자동으로 감지하고 처리하는 Listener 개념을 연습하는 프로젝트! 🚀**
 
 ---

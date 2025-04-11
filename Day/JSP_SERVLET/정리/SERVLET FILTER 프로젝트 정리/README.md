@@ -5,11 +5,11 @@
 ## 📌 개요 (Overview)
 
 이 프로젝트는 **Filter(필터)** 를 연습하는 예제야!  
-"필터"는 웹 요청/응답이 서블릿(Servlet)까지 가거나 오기 전에 **중간에서 가로채서** 뭔가를 추가하거나 검사하는 기술이야! 🛡️
+"필터"는 웹 요청/응답이 서블릿(Servlet)까지 가기 전에 **중간에서 가로채서** 뭔가를 추가하거나 검사하는 기술이야! 🛡️
 
 **예시:**
-- 로그인 안 한 사람은 특정 페이지 접근 못하게 막기 🚫
-- 모든 요청에 자동으로 인코딩 설정(UTF-8) 해주기 🌐
+- 로그인 안 한 사람은 특정 페이지 접근 막기 🚫
+- 모든 요청에 자동으로 인코딩(UTF-8) 설정하기 🌐
 
 ---
 
@@ -17,9 +17,9 @@
 
 | 역할 | 설명 |
 |:---|:---|
-| Filter (필터) | 서블릿 전에 요청을 가로채서 검사, 수정, 처리하는 역할 |
-| Servlet (서블릿) | 요청을 받아 실제 비즈니스 로직 처리하는 역할 |
-| JSP (웹페이지) | 최종적으로 사용자에게 보여지는 화면 |
+| Filter (필터) | 요청을 서블릿으로 보내기 전에 검사/수정하는 역할 |
+| Servlet (서블릿) | 클라이언트 요청을 실제로 처리하는 자바 클래스 |
+| JSP (웹페이지) | 사용자에게 보여지는 최종 화면 |
 
 ---
 
@@ -30,119 +30,100 @@
 ### 📄 C01Filter_Test.java
 
 ```java
-package Filter;
-
-import java.io.IOException;
-import javax.servlet.*;
-
-public class C01Filter_Test implements Filter {
-
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        // 필터가 처음 생성될 때 호출
-        System.out.println("C01Filter INIT...");
-    }
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        // 요청이 필터를 지나갈 때 실행
-        System.out.println("C01Filter DOFILTER before...");
-        
-        chain.doFilter(request, response); // 다음 필터 or 서블릿으로 넘기기
-        
-        System.out.println("C01Filter DOFILTER after...");
-    }
-
-    @Override
-    public void destroy() {
-        // 필터가 제거될 때 호출
-        System.out.println("C01Filter DESTROY...");
-    }
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+        throws IOException, ServletException {
+    System.out.println("C01Filter DOFILTER before...");
+    chain.doFilter(request, response); // 다음 필터 or 서블릿으로 넘기기
+    System.out.println("C01Filter DOFILTER after...");
 }
 ```
+
+> 📌 **C01Filter**는 요청 전에, 요청 후에 각각 작업을 추가로 할 수 있게 해주는 기본 필터 예제야.
 
 ---
 
 ### 📄 C02Filter_Test.java
 
 ```java
-package Filter;
-
-import java.io.IOException;
-import javax.servlet.*;
-
-public class C02Filter_Test implements Filter {
-
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("C02Filter INIT...");
-    }
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        System.out.println("C02Filter DOFILTER before...");
-        
-        chain.doFilter(request, response);
-        
-        System.out.println("C02Filter DOFILTER after...");
-    }
-
-    @Override
-    public void destroy() {
-        System.out.println("C02Filter DESTROY...");
-    }
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+        throws IOException, ServletException {
+    System.out.println("C02Filter DOFILTER before...");
+    chain.doFilter(request, response);
+    System.out.println("C02Filter DOFILTER after...");
 }
 ```
+
+> 📌 **C02Filter**도 기본 필터 흐름을 연습하는 예제야. 필터 여러 개를 적용하면 순서대로 호출돼.
 
 ---
 
 ### 📄 UTF8_EncodingFilter.java
 
 ```java
-package Filter;
-
-import java.io.IOException;
-import javax.servlet.*;
-
-public class UTF8_EncodingFilter implements Filter {
-
-    @Override
-    public void init(FilterConfig filterConfig) throws ServletException {}
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws IOException, ServletException {
-        // 요청과 응답 둘 다 UTF-8 인코딩으로 설정해줘!
-        request.setCharacterEncoding("UTF-8");
-        response.setCharacterEncoding("UTF-8");
-
-        chain.doFilter(request, response); // 다음 단계로 넘기기
-    }
-
-    @Override
-    public void destroy() {}
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+        throws IOException, ServletException {
+    request.setCharacterEncoding("UTF-8");
+    response.setCharacterEncoding("UTF-8");
+    chain.doFilter(request, response);
 }
 ```
 
-> 📌 **UTF8 필터**는 한글이 깨지는 걸 막아주는 필터야!
+> 📌 **UTF8 인코딩 필터**는 요청과 응답 모두 한글 깨짐 없이 처리할 수 있게 도와줘!
 
 ---
 
-## 💡 서블릿(Servlet) 주석 추가 버전
+### 📄 LoginRedirectFilter.java
 
-(※ Home.java, Join.java, Login.java는 거의 **05EX 프로젝트**랑 비슷하지만, 필터가 적용된 상태야!)
+```java
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+        throws IOException, ServletException {
+    HttpServletRequest req = (HttpServletRequest) request;
+    HttpSession session = req.getSession(false);
+    if (session == null || session.getAttribute("username") == null) {
+        ((HttpServletResponse) response).sendRedirect(req.getContextPath() + "/login.do");
+        return;
+    }
+    chain.doFilter(request, response);
+}
+```
 
-### 🛠️ 핵심은 "필터를 거쳐서 서블릿으로 간다!"는 점!
-
-- `/index.do`, `/main.do` → Home 서블릿
-- `/join.do` → Join 서블릿 (회원가입)
-- `/login.do` → Login 서블릿 (로그인)
+> 📌 **LoginRedirectFilter**는 로그인하지 않은 사용자를 로그인 페이지로 강제 이동시킨다!
 
 ---
 
-## 💡 JSP 파일 주석 추가 버전
+### 📄 PermissionFilter.java
+
+```java
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+        throws IOException, ServletException {
+    HttpServletRequest req = (HttpServletRequest) request;
+    HttpSession session = req.getSession(false);
+    String role = (String) session.getAttribute("role");
+
+    // 권한 체크 (ex: ROLE_ADMIN, ROLE_USER)
+    if (!"ROLE_ADMIN".equals(role)) {
+        ((HttpServletResponse) response).sendRedirect(req.getContextPath() + "/index.do");
+        return;
+    }
+    chain.doFilter(request, response);
+}
+```
+
+> 📌 **PermissionFilter**는 사용자의 권한(Role)을 검사해서 접근 가능한지 확인하는 필터야!
+
+---
+
+## 💡 서블릿(Servlet) 핵심 요약
+
+- `/index.do`, `/main.do` 요청은 `Home.java`가 처리
+- `/join.do` 요청은 `Join.java`가 처리 (회원가입)
+- `/login.do` 요청은 `Login.java`가 처리 (로그인)
+
+**모든 요청은 반드시 필터를 통과하고, 그 다음 서블릿으로 전달된다!**
+
+---
+
+## 💡 JSP 파일 요약
 
 ### 🖥️ index.jsp
 
@@ -184,21 +165,42 @@ public class UTF8_EncodingFilter implements Filter {
 
 ```jsp
 <h1>MAIN PAGE</h1>
-<!-- 로그인 성공 시 도착하는 페이지 -->
+<!-- 로그인 성공 후 이동하는 메인 화면 -->
 ```
 
 ---
 
-## ⚠️ 주의사항 (Cautions)
+## ⚠ 주의사항 (Cautions)
 
-- **필터 순서**: web.xml에 등록된 순서대로 필터가 동작해!
-- **chain.doFilter() 호출 잊지 말기**: 이거 안 하면 다음 단계(서블릿)로 요청이 넘어가지 않는다.
-- **UTF-8 필터**를 제일 먼저 설정하는 게 좋아! (글자 깨짐 방지)
+- **필터 순서 주의!**  
+  👉 web.xml에 등록한 순서대로 필터가 실행된다. (예: UTF-8 → 로그인체크 → 권한체크)
+
+- **chain.doFilter 호출 필수!**  
+  👉 이걸 호출하지 않으면 요청이 다음 단계로 넘어가지 않는다.
+
+- **UTF-8 인코딩 필터는 제일 먼저 적용**  
+  👉 한글 깨짐 방지하려면 항상 인코딩 필터가 제일 먼저 실행되어야 한다.
+
+- **세션 체크 시 null 확인 필수!**  
+  👉 세션이 없거나 세션에 로그인 정보가 없으면 안전하게 리다이렉트 처리해야 한다.
+
+---
+
+## 🧪 예제 또는 비유 (Examples or Analogies)
+
+- **Filter는 지하철 개찰구!**  
+  👉 지하철 탈 때 티켓 확인하듯이, 요청이 필터를 통과할 때 필요한 검사/처리를 한다!
+
+- **LoginRedirectFilter는 매표소 검문소!**  
+  👉 티켓 없는 사람(로그인 안한 사용자)은 입장 못하게 막고, 다시 로그인 페이지로 보내는 역할!
+
+- **PermissionFilter는 VIP 전용 구역 통제!**  
+  👉 권한이 없는 사용자는 특정 페이지에 접근하지 못하게 막는다!
 
 ---
 
 ## ✅ 한 줄 요약 (1-Line Summary)
 
-> 필터(Filter)는 요청과 응답을 중간에서 가로채서 추가 처리하거나 검사하는 웹 서버의 보안/편의 기술이다! 🛡️✨
+> **Filter는 요청(Request)을 서블릿으로 보내기 전에 검사/변경하는 보안/편의 기능이다! 🛡️🚀**
 
 ---
