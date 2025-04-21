@@ -323,6 +323,21 @@
 
 </details>
 
+<details>
+<summary>📂 STS3 정리</summary>
+
+- 🔗 [학습 일정 정리](#)
+
+<details>
+<summary>⚙ 기본 개념과 개발 환경 정리</summary>
+
+- 🔗 [Spring Framework 정리](#)
+- 🔗 [Spring Legacy Project 개발 환경 설정 정리](#)
+
+</details>
+
+</details>
+
 ---
 
 🛠 **꾸준히 업데이트 중입니다.**
