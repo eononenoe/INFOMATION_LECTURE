@@ -323,6 +323,8 @@
 
 </details>
 
+--- 
+
 <details>
 <summary>📂 STS3 정리</summary>
 
@@ -331,8 +333,8 @@
 <details>
 <summary>⚙ 기본 개념과 개발 환경 정리</summary>
 
-- 🔗 [Spring Framework 정리](#)
-- 🔗 [Spring Legacy Project 개발 환경 설정 정리](#)
+- 🔗 [Spring Framework 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Framework%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Spring Legacy Project 개발 환경 설정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Legacy%20Project%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
