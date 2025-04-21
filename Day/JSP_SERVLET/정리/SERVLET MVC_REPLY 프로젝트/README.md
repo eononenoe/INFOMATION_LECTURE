@@ -1,224 +1,1458 @@
 
-# 🗂 MVC_INIT 프로젝트 정리
+# 💻 MVC_REPLY 프로젝트 정리
 
 ---
 
-## 📄 Controller/FrontController.java - 프론트 컨트롤러
+## 🧠 주요 키워드 설명
 
-### ✍️ 파일 설명
-- 모든 요청을 가장 먼저 받아서 적절한 서브 컨트롤러에게 전달하는 중앙 통제 서블릿입니다.
-- **MVC 패턴**에서 핵심 역할을 합니다.
+- **HttpServlet**: Java에서 웹 요청을 처리하기 위해 사용하는 기본 서블릿 클래스입니다.
+- **HttpServletRequest**: 클라이언트의 요청 정보를 담고 있는 객체로, 파라미터, 헤더 등을 읽을 수 있습니다.
+- **HttpServletResponse**: 서버의 응답 정보를 담고 있는 객체로, 클라이언트로 출력할 내용을 설정할 수 있습니다.
+- **ServletConfig**: 서블릿의 초기화 정보를 담고 있는 객체입니다.
+- **ServletContext**: 웹 애플리케이션 전체의 정보를 공유할 수 있는 객체입니다.
+- **RequestDispatcher**: 다른 JSP나 서블릿으로 요청을 포워딩할 때 사용합니다.
+- **SubController**: FrontController 패턴에서 요청을 실제 처리하는 하위 컨트롤러 역할의 인터페이스입니다.
+- **UserDto**: 사용자 정보를 전달하는 데이터 객체입니다. (Data Transfer Object)
+- **UserServiceImpl**: 사용자 관련 비즈니스 로직을 수행하는 서비스 클래스입니다.
+- **Map**: Java에서 키-값 쌍으로 데이터를 저장하는 자료구조입니다.
 
-### 🧩 코드 일부 발췌
+---
+## 📄 FrontController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/FrontController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
-String cmd = req.getParameter("cmd");
-SubController subController = mappings.get(cmd);
+package Controller;
 
-if (subController != null) {
-    subController.execute(req, resp);
-} else {
-    req.getRequestDispatcher("/WEB-INF/view/error.jsp").forward(req, resp);
-}
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 ```
 
-### 📌 코드 등장 메서드
-- `req.getParameter("cmd")` : 클라이언트로부터 명령어(command) 파라미터를 받습니다.
-- `subController.execute(req, resp)` : 명령어에 해당하는 서브 컨트롤러를 실행합니다.
-- `req.getRequestDispatcher(...).forward()` : 에러 발생 시 에러 페이지로 포워딩합니다.
+📌 **등장 메서드 목록**
+- `System.out.println`
+- `String endPoint = req.getServletPath`
+- `protected void service`
+- `void exceptionHandler`
+- `void init`
 
-### 🧠 흐름 정리
-- 요청 cmd 파라미터를 기준으로 서브컨트롤러를 매칭해서 실행합니다.  
-- 매칭 실패 시 error.jsp로 이동합니다.
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📦 **put()**: Java Map에서 Key-Value 형태로 데이터를 저장할 때 사용합니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+🛠 **init()**: 서블릿 초기화 시 실행되는 메서드입니다.
 
 ---
 
-## 📄 Controller/HomeController.java - 홈 컨트롤러
+## 📄 HomeController.java
 
-### ✍️ 파일 설명
-- 기본 홈 화면(index.jsp)으로 이동시키는 역할을 합니다.
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/HomeController.java`
 
-### 🧩 코드 일부 발췌
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
-req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
+package Controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HomeController implements SubController{
+	private HttpServletRequest req;
+	private HttpServletResponse resp;
+	@Override
+	public void execute(HttpServletRequest req, HttpServletResponse resp) {
 ```
 
-### 📌 코드 등장 메서드
-- `req.getRequestDispatcher(...).forward()` : 홈 화면 JSP로 요청을 전달합니다.
+📌 **등장 메서드 목록**
+- `void execute`
+- `void exceptionHandler`
 
-### 🧠 흐름 정리
-- 기본 요청이 들어오면 index.jsp로 포워딩합니다.
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
 
 ---
 
-## 📄 Controller/SubController.java - 서브 컨트롤러 인터페이스
+## 📄 SubController.java
 
-### ✍️ 파일 설명
-- 모든 서브 컨트롤러가 구현해야 하는 인터페이스입니다.
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/SubController.java`
 
-### 🧩 코드 일부 발췌
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
+package Controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 public interface SubController {
-    void execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException;
+	public void execute (HttpServletRequest req, HttpServletResponse resp);
 }
 ```
 
-### 📌 코드 등장 메서드
-- `execute(req, resp)` : 요청을 받아 처리하는 메서드, 서브컨트롤러마다 구체적으로 구현합니다.
+📌 **등장 메서드 목록**
+- `void execute`
 
-### 🧠 흐름 정리
-- 각 기능별 서브컨트롤러는 이 인터페이스를 구현하여 요청을 처리합니다.
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
 
 ---
 
-## 📄 Domain/Dao/Dao.java - DAO 추상화
+## 📄 BookCreateController.java
 
-### ✍️ 파일 설명
-- 데이터베이스 접근을 담당하는 최상위 DAO 추상 클래스입니다.
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookCreateController.java`
 
-### 🧩 코드 일부 발췌
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
-protected Connection conn;
-protected PreparedStatement pstmt;
-protected ResultSet rs;
+package Controller.book;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Dto.BookDto;
+import Domain.Service.BookServiceImpl;
+
+public class BookCreateController implements SubController{
 ```
 
-### 📌 코드 등장 메서드
-- `Connection` : DB 연결 객체
-- `PreparedStatement` : SQL 실행 준비 객체
-- `ResultSet` : SQL 실행 결과 저장 객체
+📌 **등장 메서드 목록**
+- `String publisher = req.getParameter`
+- `String isbn = req.getParameter`
+- `String bookCode = req.getParameter`
+- `String uri = req.getMethod`
+- `BookCreateController`
+- `boolean isadded =  bookService.bookRegistration`
+- `private boolean isValid`
+- `void execute`
+- `void exceptionHandler`
+- `String bookName = req.getParameter`
 
-### 🧠 흐름 정리
-- DAO들이 데이터베이스 작업을 공통적으로 사용할 수 있게 기본 필드를 제공합니다.
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
 
 ---
 
-## 📄 Domain/Dao/ConnectionPool/ConnectionItem.java - 커넥션 풀 아이템
+## 📄 BookDeleteController.java
 
-### ✍️ 파일 설명
-- 커넥션 풀에 들어가는 각각의 Connection 객체를 포장하는 클래스입니다.
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookDeleteController.java`
 
-### 🧩 코드 일부 발췌
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
-private Connection conn;
-private boolean isUsing;
+package Controller.book;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Dto.BookDto;
+import Domain.Service.BookServiceImpl;
+
+public class BookDeleteController implements SubController {
 ```
 
-### 📌 코드 등장 메서드
-- `Connection conn` : 실제 DB 연결 객체
-- `boolean isUsing` : 현재 연결 사용 여부
+📌 **등장 메서드 목록**
+- `String pageno = req.getParameter`
+- `String bookCode = req.getParameter`
+- `boolean isDelete = bookService.removeBook`
+- `BookDeleteController`
+- `private boolean isValid`
+- `void execute`
+- `void exceptionHandler`
 
-### 🧠 흐름 정리
-- 연결 객체와 사용여부를 묶어서 관리합니다.
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
 
 ---
 
-## 📄 Domain/Dao/ConnectionPool/ConnectionPool.java - 커넥션 풀
+## 📄 BookListController.java
 
-### ✍️ 파일 설명
-- DB 연결을 미리 생성해놓고 필요할 때 빌려주는 커넥션 풀을 구현합니다.
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookListController.java`
 
-### 🧩 코드 일부 발췌
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
 ```java
-public synchronized Connection getConnection() {
-    for (ConnectionItem item : pool) {
-        if (!item.isUsing()) {
-            item.setUsing(true);
-            return item.getConn();
-        }
-    }
-    return null;
+package Controller.book;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Dto.BookDto;
+```
+
+📌 **등장 메서드 목록**
+- `String pageno = req.getParameter`
+- `String keyword =req.getParameter`
+- `void exceptionHandler`
+- `String type = req.getParameter`
+- `BookListController`
+- `private boolean isValid`
+- `void execute`
+- `String amount = req.getParameter`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 BookReadController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookReadController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.book;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Service.BookServiceImpl;
+```
+
+📌 **등장 메서드 목록**
+- `String pageno = req.getParameter`
+- `String bookCode = req.getParameter`
+- `BookReadController`
+- `private boolean isValid`
+- `void execute`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 BookReplyCreateController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookReplyCreateController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.book;
+
+import java.io.PrintWriter;
+import java.time.LocalDateTime;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+```
+
+📌 **등장 메서드 목록**
+- `BookReplyCreateController`
+- `String contents = req.getParameter`
+- `String bookCode = req.getParameter`
+- `boolean isAdded=bookService.bookReplyAdd`
+- `void exceptionHandler`
+- `private boolean isValid`
+- `void execute`
+- `String username = null;`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+🔐 **getSession()**: 사용자와 서버 간의 세션 객체를 가져올 때 사용됩니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 BookReplyListController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookReplyListController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.book;
+
+import java.io.PrintWriter;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+```
+
+📌 **등장 메서드 목록**
+- `private boolean isValid`
+- `String JsonData = objectMapper.writeValueAsString`
+- `String bookCode =req.getParameter`
+- `BookReplyListController`
+- `void execute`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📦 **put()**: Java Map에서 Key-Value 형태로 데이터를 저장할 때 사용합니다.
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 BookUpdateController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/book/BookUpdateController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.book;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Dto.BookDto;
+import Domain.Service.BookServiceImpl;
+
+public class BookUpdateController implements SubController {
+```
+
+📌 **등장 메서드 목록**
+- `String pageno = req.getParameter`
+- `String publisher = req.getParameter`
+- `BookUpdateController`
+- `String isbn = req.getParameter`
+- `String bookCode = req.getParameter`
+- `boolean isUpdate = bookService.modifyBook`
+- `private boolean isValid`
+- `void execute`
+- `void exceptionHandler`
+- `String bookName = req.getParameter`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 AdminMainController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/AdminMainController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+
+public class AdminMainController implements SubController{
+	private HttpServletRequest req;
+	private HttpServletResponse resp;
+```
+
+📌 **등장 메서드 목록**
+- `void execute`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 ManagerMainController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/ManagerMainController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+
+public class ManagerMainController implements SubController{
+	private HttpServletRequest req;
+	private HttpServletResponse resp;
+```
+
+📌 **등장 메서드 목록**
+- `void execute`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 UserCreateController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/UserCreateController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+import Domain.Dto.UserDto;
+import Domain.Service.UserServiceImpl;
+
+public class UserCreateController implements SubController{
+```
+
+📌 **등장 메서드 목록**
+- `String username = req.getParameter`
+- `String uri = req.getMethod`
+- `UserCreateController`
+- `boolean isJoin =  userService.userJoin`
+- `String role = "ROLE_USER";`
+- `boolean isOk = isValid`
+- `private boolean isValid`
+- `void execute`
+- `String password = req.getParameter`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 UserLoginController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/UserLoginController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import java.io.PrintWriter;
+import java.net.URLEncoder;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+```
+
+📌 **등장 메서드 목록**
+- `String username = req.getParameter`
+- `String uri = req.getMethod`
+- `UserLoginController`
+- `String message =`
+- `boolean isOk = isValid`
+- `boolean isLogin = false;`
+- `private boolean isValid`
+- `void execute`
+- `String password = req.getParameter`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🔡 **getParameter()**: 사용자의 폼 입력 값 등 요청 파라미터를 읽어오는 메서드입니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+🔐 **getSession()**: 사용자와 서버 간의 세션 객체를 가져올 때 사용됩니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 UserLogoutController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/UserLogoutController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import Controller.SubController;
+import Domain.Service.UserServiceImpl;
+```
+
+📌 **등장 메서드 목록**
+- `boolean isOk =  isValid`
+- `String role =`
+- `void exceptionHandler`
+- `private boolean isValid`
+- `UserLogoutController`
+- `void execute`
+- `String username =`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+🔐 **getSession()**: 사용자와 서버 간의 세션 객체를 가져올 때 사용됩니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 UserMainController.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Controller/user/UserMainController.java`
+
+✍️ **파일 간단 설명**  
+요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Controller.user;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Controller.SubController;
+
+public class UserMainController implements SubController{
+	private HttpServletRequest req;
+	private HttpServletResponse resp;
+```
+
+📌 **등장 메서드 목록**
+- `void execute`
+- `void exceptionHandler`
+
+🧠 **흐름 정리**  
+이 클래스는 **Controller** 역할을 수행하며, 요청을 받아서 처리 흐름을 제어하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+➡ **forward()**: 다른 JSP나 서블릿으로 요청을 전달(포워딩)합니다.
+🧭 **execute()**: SubController에서 요청을 처리하는 핵심 메서드입니다.
+
+---
+
+## 📄 BookDao.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/BookDao.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import Domain.Dto.BookDto;
+import Domain.Dto.Criteria;
+import Domain.Dto.UserDto;
+
+public interface BookDao {
+```
+
+📌 **등장 메서드 목록**
+- `long count`
+- `int update`
+- `int delete`
+- `List<BookDto> selectAll`
+- `int insert`
+- `BookDto select`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 BookDaoImpl.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/BookDaoImpl.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
+
+import Domain.Dao.ConnectionPool.ConnectionItem;
+```
+
+📌 **등장 메서드 목록**
+- `String type = criteria.getType`
+- `long count`
+- `//	private String id="root";`
+- `UserDto select`
+- `//	private String pw="1234";`
+- `int update`
+- `String keyword = criteria.getKeyword`
+- `int delete`
+- `List<BookDto> selectAll`
+- `int insert`
+- `BookDto select`
+- `//	private String url="jdbc:mysql://localhost:3306/bookDB";`
+- `static BookDao getInstance`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 BookReplyDaoImpl.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/BookReplyDaoImpl.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.LinkedList;
+import java.util.List;
+
+import Domain.Dto.BookDto;
+import Domain.Dto.BookReplyDto;
+```
+
+📌 **등장 메서드 목록**
+- `static BookReplyDaoImpl getInstance`
+- `List<BookReplyDto> selectAll`
+- `int insert`
+- `long count`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 Dao.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/Dao.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import Domain.Dao.ConnectionPool.ConnectionItem;
+import Domain.Dao.ConnectionPool.ConnectionPool;
+
+public abstract class Dao {
+```
+
+📌 **등장 메서드 목록**
+- `Dao`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 UserDao.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/UserDao.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import Domain.Dto.UserDto;
+
+
+
+public interface UserDao {
+```
+
+📌 **등장 메서드 목록**
+- `int delete`
+- `int insert`
+- `UserDto select`
+- `int update`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 UserDaoImpl.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/UserDaoImpl.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import Domain.Dto.UserDto;
+```
+
+📌 **등장 메서드 목록**
+- `UserDto select`
+- `int update`
+- `static UserDao getInstance`
+- `int delete`
+- `List<UserDto> selectAll`
+- `int insert`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 ConnectionItem.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/ConnectionPool/ConnectionItem.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao.ConnectionPool;
+
+import java.sql.Connection;
+
+import javax.transaction.xa.XAResource;
+import javax.transaction.xa.Xid;
+
+public class ConnectionItem {
+	private Connection conn;
+	private boolean isUse;
+```
+
+📌 **등장 메서드 목록**
+- `boolean isUse`
+- `void setXaResource`
+- `boolean getInTransaction`
+- `ConnectionItem`
+- `void setInTransaction`
+- `private boolean isUse;`
+- `private boolean inTransaction;`
+- `XAResource getXaResource`
+- `void setXid`
+- `Xid getXid`
+- `void setUse`
+- `Connection getConn`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 ConnectionPool.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dao/ConnectionPool/ConnectionPool.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dao.ConnectionPool;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.XAConnection;
+import javax.transaction.xa.XAResource;
+import javax.transaction.xa.Xid;
+```
+
+📌 **등장 메서드 목록**
+- `int getFormatId`
+- `byte[] getGlobalTransactionId`
+- `private String id="root";`
+- `private static Xid createXid`
+- `private int formatId = 1;`
+- `private String url="jdbc:mysql://localhost:3306/testDB";;`
+- `private final int size=10;`
+- `void beginTransaction`
+- `synchronized ConnectionItem getConnection`
+- `for`
+- `private String pw="1234";`
+- `synchronized void releaseConnection`
+- `void commitTransaction`
+- `byte[] getBranchQualifier`
+- `static ConnectionPool getInstance`
+- `void rollbackTransaction`
+- `int prepare = xaResource.prepare`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 BookDto.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dto/BookDto.java`
+
+✍️ **파일 간단 설명**  
+데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dto;
+
+public class BookDto {
+	private String bookCode;
+	private String bookName;
+	private String publisher;
+	private String isbn;
+	//생성자 , getter and setter toString
+	public BookDto() {}
+	public BookDto(String bookCode, String bookName, String publisher, String isbn) {
+```
+
+📌 **등장 메서드 목록**
+- `String getBookCode`
+- `void setBookCode`
+- `void setBookName`
+- `String getIsbn`
+- `private String publisher;`
+- `void setIsbn`
+- `void setPublisher`
+- `private String bookName;`
+- `private String isbn;`
+- `private String bookCode;`
+- `String getPublisher`
+- `String toString`
+- `BookDto`
+- `String getBookName`
+
+🧠 **흐름 정리**  
+이 클래스는 **DTO** 역할을 수행하며, 데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 BookReplyDto.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dto/BookReplyDto.java`
+
+✍️ **파일 간단 설명**  
+데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dto;
+
+import java.time.LocalDateTime;
+
+public class BookReplyDto {
+	private int no;
+	private String bookCode;
+	private String username;
+	private String contents;
+	private LocalDateTime createAt;
+```
+
+📌 **등장 메서드 목록**
+- `String getBookCode`
+- `void setBookCode`
+- `void setCreateAt`
+- `void setUsername`
+- `void setNo`
+- `String getContents`
+- `private String username;`
+- `private int no;`
+- `LocalDateTime getCreateAt`
+- `private String bookCode;`
+- `String getUsername`
+- `BookReplyDto`
+- `int getNo`
+- `void setContents`
+- `String toString`
+- `private String contents;`
+
+🧠 **흐름 정리**  
+이 클래스는 **DTO** 역할을 수행하며, 데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 Criteria.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dto/Criteria.java`
+
+✍️ **파일 간단 설명**  
+데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dto;
+
+public class Criteria {
+	private int pageno; 	//현재 페이지
+	private int amount;		//페이지 당 보여줄 게시물 건수
+	private String type;	//타입(도서명 , 도서코드 , 출판사)
+	private String keyword;	//키워드
+	
+	public Criteria() {
+		//처음페이지로 들어왔을떄 기본값
+```
+
+📌 **등장 메서드 목록**
+- `private int amount;		//페이지 당 보여줄 게시물 건수`
+- `void setType`
+- `String getKeyword`
+- `void setKeyword`
+- `private int pageno; 	//현재 페이지`
+- `void setAmount`
+- `String getType`
+- `int getPageno`
+- `int getAmount`
+- `Criteria`
+- `private String keyword;	//키워드`
+- `private String type;	//타입`
+- `String toString`
+- `void setPageno`
+
+🧠 **흐름 정리**  
+이 클래스는 **DTO** 역할을 수행하며, 데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 PageDto.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dto/PageDto.java`
+
+✍️ **파일 간단 설명**  
+데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dto;
+
+public class PageDto {
+	private static final long serialVersionUID = 5L;
+
+	private long totalCount;		//전체 게시물 건수 count
+	//페이지정보
+	private int totalpage;			//총게시물건수 / amount
+	private Criteria criteria;		//현재페이지,한페이지당 읽을 게시물의 건수가 저장되어있음
+	//블럭정보
+```
+
+📌 **등장 메서드 목록**
+- `private int nowBlock;			//현재페이지번호 /pagePerBlock`
+- `private int startPage;`
+- `void setTotalCount`
+- `private int pagePerBlock;		//블럭에 표시할 페이지개수`
+- `void setTotalBlock`
+- `int getStartPage`
+- `long getTotalCount`
+- `void setPrev`
+- `void setStartPage`
+- `boolean isPrev`
+- `void setEndPage`
+- `void setCriteria`
+- `private int totalpage;			//총게시물건수 / amount`
+- `int getTotalBlock`
+- `private boolean prev,next;`
+- `void setNowBlock`
+- `Criteria getCriteria`
+- `void setTotalpage`
+- `private int endPage;`
+- `void setNext`
+- `int getNowBlock`
+- `boolean isNext`
+- `private int totalBlock;			//totalpage / pagePerBlock`
+- `void setPagePerBlock`
+- `int getTotalpage`
+- `PageDto`
+- `int getPagePerBlock`
+- `int getEndPage`
+- `String toString`
+
+🧠 **흐름 정리**  
+이 클래스는 **DTO** 역할을 수행하며, 데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 UserDto.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Dto/UserDto.java`
+
+✍️ **파일 간단 설명**  
+데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Dto;
+
+public class UserDto {
+	private String username;
+	private String password;
+	private String role;
+	//생성자 getter and setter toString
+	public UserDto() {}
+	public UserDto(String username, String password, String role) {
+		super();
+```
+
+📌 **등장 메서드 목록**
+- `private String role;`
+- `void setUsername`
+- `String getRole`
+- `private String username;`
+- `UserDto`
+- `String getUsername`
+- `void setPassword`
+- `String getPassword`
+- `void setRole`
+- `String toString`
+- `private String password;`
+
+🧠 **흐름 정리**  
+이 클래스는 **DTO** 역할을 수행하며, 데이터 전달 객체로, 계층 간 데이터 이동을 담당합니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 BookServiceImpl.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Service/BookServiceImpl.java`
+
+✍️ **파일 간단 설명**  
+비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Service;
+
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import Domain.Dao.BookDao;
+import Domain.Dao.BookDaoImpl;
+import Domain.Dao.BookReplyDaoImpl;
+import Domain.Dto.BookDto;
+```
+
+📌 **등장 메서드 목록**
+- `int amount = criteria.getAmount`
+- `int offset =`
+- `String type = criteria.getType`
+- `boolean removeBook`
+- `static BookServiceImpl getInstance`
+- `String keyword = criteria.getKeyword`
+- `int result = bookDao.update`
+- `boolean bookReplyAdd`
+- `int result = bookDao.delete`
+- `boolean modifyBook`
+- `Map<String, Object> getAllBooks`
+- `int result = bookReplyDaoImpl.insert`
+- `long bookReplyCount`
+- `boolean bookRegistration`
+- `Map<String, Object> getBook`
+- `int result = bookDao.insert`
+- `List<BookReplyDto> getAllBookReply`
+- `Map<String,Object> getAllBooks`
+
+🧠 **흐름 정리**  
+이 클래스는 **Service** 역할을 수행하며, 비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📦 **put()**: Java Map에서 Key-Value 형태로 데이터를 저장할 때 사용합니다.
+
+---
+
+## 📄 UserServiceImpl.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Domain/Service/UserServiceImpl.java`
+
+✍️ **파일 간단 설명**  
+비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Domain.Service;
+
+import java.sql.SQLException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpSession;
+
+import Domain.Dao.UserDao;
+import Domain.Dao.UserDaoImpl;
+```
+
+📌 **등장 메서드 목록**
+- `Map<String, Object> logout`
+- `boolean isJoin = false;`
+- `boolean userJoin`
+- `static UserServiceImpl getInstance`
+- `boolean isLogin = false;`
+- `Map<String,Object> login`
+
+🧠 **흐름 정리**  
+이 클래스는 **Service** 역할을 수행하며, 비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🔍 **추가 개념 설명**  
+📦 **put()**: Java Map에서 Key-Value 형태로 데이터를 저장할 때 사용합니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+
+---
+
+## 📄 PermissionFilter.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Filter/PermissionFilter.java`
+
+✍️ **파일 간단 설명**  
+요청/응답을 전처리/후처리하는 필터 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Filter;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+```
+
+📌 **등장 메서드 목록**
+- `String projectPath = filterConfig.getServletContext`
+- `void doFilter`
+- `String myRole =`
+- `String requestUri = request.getRequestURI`
+- `String uri = request.getRequestURI`
+- `void init`
+
+🧠 **흐름 정리**  
+이 클래스는 **Filter** 역할을 수행하며, 요청/응답을 전처리/후처리하는 필터 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🌐 **getRequestURI()**: 클라이언트가 요청한 URI 경로를 반환합니다.
+🚧 **doFilter()**: 필터 체인에서 요청을 가로채어 전처리/후처리를 수행하는 메서드입니다.
+📦 **put()**: Java Map에서 Key-Value 형태로 데이터를 저장할 때 사용합니다.
+📌 **setAttribute()**: request 또는 session에 데이터를 저장하는 메서드입니다.
+🔐 **getSession()**: 사용자와 서버 간의 세션 객체를 가져올 때 사용됩니다.
+🛠 **init()**: 서블릿 초기화 시 실행되는 메서드입니다.
+
+---
+
+## 📄 UTF8_EncodingFilter.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Filter/UTF8_EncodingFilter.java`
+
+✍️ **파일 간단 설명**  
+요청/응답을 전처리/후처리하는 필터 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Filter;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+```
+
+📌 **등장 메서드 목록**
+- `void doFilter`
+
+🧠 **흐름 정리**  
+이 클래스는 **Filter** 역할을 수행하며, 요청/응답을 전처리/후처리하는 필터 클래스입니다.
+
+🔍 **추가 개념 설명**  
+🚧 **doFilter()**: 필터 체인에서 요청을 가로채어 전처리/후처리를 수행하는 메서드입니다.
+
+---
+
+## 📄 DaoTests.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Tests/DaoTests.java`
+
+✍️ **파일 간단 설명**  
+데이터베이스 접근을 담당하는 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Tests;
+
+import java.time.LocalDateTime;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+import Domain.Dao.BookDao;
+import Domain.Dao.BookDaoImpl;
+import Domain.Dao.BookReplyDaoImpl;
+```
+
+📌 **등장 메서드 목록**
+- `void test5`
+- `void test6`
+- `void test4`
+- `void test3`
+- `void test`
+- `void test2`
+- `void test7`
+
+🧠 **흐름 정리**  
+이 클래스는 **DAO** 역할을 수행하며, 데이터베이스 접근을 담당하는 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 ServiceTests.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Tests/ServiceTests.java`
+
+✍️ **파일 간단 설명**  
+비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Tests;
+
+import org.junit.jupiter.api.Test;
+
+import Domain.Dto.BookDto;
+import Domain.Service.BookServiceImpl;
+
+class ServiceTests {
+
+	@Test
+```
+
+📌 **등장 메서드 목록**
+- `void test`
+
+🧠 **흐름 정리**  
+이 클래스는 **Service** 역할을 수행하며, 비즈니스 로직을 처리하는 서비스 클래스입니다.
+
+🔍 **추가 개념 설명**  
+특이 키워드 없음
+
+---
+
+## 📄 Role.java
+
+📂 **위치**: `12MVC_REPLY/src/main/java/Type/Role.java`
+
+✍️ **파일 간단 설명**  
+역할이나 상수 타입을 정의한 클래스입니다.
+
+🧩 **코드 일부 발췌**
+```java
+package Type;
+
+public enum Role {
+	ROLE_ANONYMOUS,		//0
+	ROLE_USER,			//1
+	ROLE_MANAGER,		//2
+	ROLE_ADMIN			//3
 }
 ```
 
-### 📌 코드 등장 메서드
-- `getConnection()` : 사용 가능한 Connection을 찾아 반환합니다.
+📌 **등장 메서드 목록**
+없음
 
-### 🧠 흐름 정리
-- 커넥션 풀에서 사용 가능한 Connection을 찾아서 반환합니다. 없으면 null 반환.
+🧠 **흐름 정리**  
+이 클래스는 **Enum or Type** 역할을 수행하며, 역할이나 상수 타입을 정의한 클래스입니다.
 
----
-
-## 📄 Domain/Dao/ConnectionPool/MysqlXADataSourceFactory.java - 데이터소스 팩토리
-
-### ✍️ 파일 설명
-- MySQL 데이터베이스를 위한 DataSource를 생성합니다.
+🔍 **추가 개념 설명**  
+특이 키워드 없음
 
 ---
-
-## 📄 Filter/UTF8_EncodingFilter.java - UTF-8 인코딩 필터
-
-### ✍️ 파일 설명
-- 모든 요청과 응답에 대해 UTF-8 인코딩을 설정하는 필터입니다.
-
-### 🧩 코드 일부 발췌
-```java
-request.setCharacterEncoding("UTF-8");
-response.setCharacterEncoding("UTF-8");
-chain.doFilter(request, response);
-```
-
-### 📌 코드 등장 메서드
-- `request.setCharacterEncoding("UTF-8")` : 요청 인코딩을 UTF-8로 설정합니다.
-- `response.setCharacterEncoding("UTF-8")` : 응답 인코딩을 UTF-8로 설정합니다.
-- `chain.doFilter(request, response)` : 다음 필터나 서블릿으로 요청을 전달합니다.
-
-### 🧠 흐름 정리
-- UTF-8 인코딩을 적용하고 다음 필터 또는 서블릿으로 요청을 넘깁니다.
-
----
-
-## 📄 JSP 파일들 (View)
-
-### ✍️ 간단 설명
-- **index.jsp** : 홈 화면
-- **template.jsp** : 공통 레이아웃 템플릿
-- **user/create.jsp** : 사용자 생성 폼
-- **error.jsp** : 에러 발생 시 보여줄 화면
-
----
-
-## 📄 Resources 파일들 (정적 리소스)
-
-### ✍️ 간단 설명
-- **common.css** : 공통 스타일시트
-- **common.js** : 공통 자바스크립트
-- **layouts/nav.jsp, footer.jsp, topHeader.jsp** : 페이지 공통 레이아웃 구성 요소
-
----
-
-# 📌 개요 (Overview)
-
-**09MVC_INIT**는 Java Servlet을 기반으로 한 **초기형 MVC 패턴 웹 프로젝트**입니다.  
-프론트 컨트롤러 패턴을 적용하여 요청을 일관되게 처리하고, 커넥션 풀을 통한 DB 효율성을 확보했습니다.
-
----
-
-# 💡 핵심 개념 요약 (Key Concepts)
-
-- **FrontController** : 모든 요청을 하나의 진입점으로 받아 분배
-- **SubController** : 실제 비즈니스 로직을 수행하는 컨트롤러
-- **DAO** : 데이터베이스 접근 전담 객체
-- **ConnectionPool** : DB 커넥션 재사용을 통한 성능 최적화
-- **Filter** : 요청/응답 문자 인코딩 처리
-
----
-
-# ⚠ 주의사항 (Cautions)
-
-- 커넥션 풀 예외처리 미흡 : 커넥션 반환 누락 시 자원 누수 발생 가능
-- 로그인/회원가입 등 실제 서브컨트롤러 구현이 아직 없음 (확장 필요)
-- Exception 처리 전반적으로 미흡
-
----
-
-# 🧪 비유 또는 예제 (Examples or Analogies)
-
-- **FrontController** = 안내 데스크 (모든 손님을 맞이해서 알맞은 창구로 보내줌)
-- **ConnectionPool** = 사무실의 공유 복합기 (필요할 때 빌려쓰고 다시 돌려놓음)
-
----
-
-# ✅ 한 줄 요약 (1-Line Summary)
-
-> \"09MVC_INIT는 FrontController 기반의 MVC 웹 구조를 초기 설정하고, 커넥션 풀로 성능을 고려한 Java 웹 프로젝트의 출발점입니다!\"
-```
