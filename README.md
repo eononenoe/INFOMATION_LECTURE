@@ -343,7 +343,7 @@
 <summary>🧩 Spring MVC 구성 & 요청 처리</summary>
 
 - 🔗 [Spring MVC 구조 & Lombok 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20MVC%20%EA%B5%AC%EC%A1%B0%20%26%20Lombok%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC)
-- 🔗 [Spring MVC 요청 매핑 & 파라미터 처리 정리](#)
+- 🔗 [Spring MVC 요청 매핑 & 파라미터 처리 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20MVC%20%EC%9A%94%EC%B2%AD%20%EB%A7%A4%ED%95%91%20%26%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%EC%B2%98%EB%A6%AC%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
