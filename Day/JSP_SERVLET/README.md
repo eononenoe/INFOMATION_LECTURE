@@ -1,4 +1,4 @@
-# DATABASE
+# JSP_SERVLET
 ---
 
 
@@ -433,3 +433,41 @@
     - BookDto.java
   - Domain/Service
     - BookServiceImpl.java
+
+- ## Day_75
+  - Controller
+    - FrontController.java
+    - SubController.java
+    - HomeController.java
+    - 테스트 컨트롤러
+      - SimpleController.java
+  - Controller/book
+    - BookDeleteController.java
+    - BookUpdateController.java
+  - View (JSP)
+    - WEB-INF/view/book
+      - delete.jsp
+      - update.jsp
+    - 기타 View
+      - home.jsp
+      - abcd.jsp
+      - test1.jsp
+  - Domain
+    - Dto
+      - BookDto.java
+      - PersonDto.java
+    - Service
+      - BookServiceImpl.java
+  - Config
+    - PersonComponent.java
+    - PersonDtoBeanConfig.java
+  - XML 설정파일
+    - Spring 설정
+      - WEB-INF/spring/appServlet/servlet-context.xml
+      - WEB-INF/spring/root-context.xml
+    - Web 설정
+      - WEB-INF/web.xml
+  - Resources
+    - log4j.xml
+  - Tests
+    - Ditests.java
