@@ -336,9 +336,14 @@
 
 - 🔗 [Spring Framework 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Framework%20%EC%A0%95%EB%A6%AC)
 - 🔗 [Spring Legacy Project 개발 환경 설정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Legacy%20Project%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20%EC%A0%95%EB%A6%AC)
-- 🔗 [Spring MVC 구조 & Lombok 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20MVC%20%EA%B5%AC%EC%A1%B0%20%26%20Lombok%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC)
 
 </details>
+
+<details>
+<summary>🧩 Spring MVC 구성 & 요청 처리</summary>
+
+- 🔗 [Spring MVC 구조 & Lombok 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20MVC%20%EA%B5%AC%EC%A1%B0%20%26%20Lombok%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Spring MVC 요청 매핑 & 파라미터 처리 정리](#)
 
 </details>
 
