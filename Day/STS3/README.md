@@ -33,4 +33,14 @@
 
 
 - ## Day_77
-    - 
+  - PPT 제작
+  - controller
+    - HomeController
+    - ParameterTestController
+    - SimpleController
+  - main/resources
+    - log4j.xml
+  - views/param
+    - forward_result.jsp
+    - page01.jsp
+    - redirect_result.jsp
