@@ -1,4 +1,4 @@
-# ⚠️ 예외 처리: @ExceptionHandler & @ControllerAdvice
+# 📄 Spring 예외 처리 (Exception Handling)
 
 📌 **개요 (Overview)**  
 스프링 MVC에서 예외가 터졌을 때 그냥 에러 페이지 띄우는 거 말고,  

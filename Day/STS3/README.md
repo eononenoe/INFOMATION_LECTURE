@@ -44,3 +44,53 @@
     - forward_result.jsp
     - page01.jsp
     - redirect_result.jsp
+
+- ## Day_78
+ - ex03_dataValidation
+    - app
+      - PersonComponent.java
+      - PersonDtoBeanConfig.java
+      - HomeController.java
+      - MemoController.java
+      - UserController.java
+      - PersonDto.java
+      - UserDto.java
+    - resources
+      - log4j.xml
+    - webapp
+      - servlet-context.xml
+      - root-context.xml
+- ex04_exception
+  - app
+    - PersonComponent.java
+    - PersonDtoBeanConfig.java
+    - ExceptionTestController.java
+    - HomeController.java
+    - MemoController.java
+    - UserController.java
+    - GlobalExceptionHandler.java
+    - PersonDto.java
+    - UserDto.java
+  - resources
+    - log4j.xml
+  - webapp
+    - servlet-context.xml
+    - root-context.xml
+- ex05_dataSource
+  - app
+    - PersonComponent.java
+    - PersonDtoBeanConfig.java
+    - ExceptionTestController.java
+    - HomeController.java
+    - MemoController.java
+    - UserController.java
+    - GlobalExceptionHandler.java
+    - MemoDaoImpl.java
+    - MemoServiceImpl.java
+    - PersonDto.java
+    - UserDto.java
+  - resources
+    - log4j.xml
+  - webapp
+    - servlet-context.xml
+    - root-context.xml

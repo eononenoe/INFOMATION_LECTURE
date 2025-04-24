@@ -13,6 +13,8 @@ Spring에서는 `Connection`을 직접 만들지 않고, `DataSource`를 통해 
 - JDBC의 `Connection`을 추상화한 인터페이스 (`javax.sql.DataSource`)
 - 직접 커넥션 만들지 않고, 이걸로 연결 관리
 - DAO나 Repository 클래스에서 주로 사용함
+- JDBC `Connection`을 추상화한 객체
+- 트랜잭션, 커넥션 풀, 자원 반환 관리 등 자동 처리
 
 ### ✔ 특징 요약
 - ✅ 커넥션 풀(Pooling) 기반 → **성능 향상**
