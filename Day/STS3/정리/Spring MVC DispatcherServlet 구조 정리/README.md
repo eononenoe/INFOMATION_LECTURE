@@ -1,4 +1,3 @@
-
 # 🚦 Spring MVC DispatcherServlet 구조 정리
 
 Spring MVC에서 DispatcherServlet은 **모든 웹 요청의 진입점**으로 동작하며, 요청을 적절한 Controller로 전달하고, 응답 결과를 사용자에게 반환하는 **프론트 컨트롤러(Front Controller)**입니다.
@@ -28,6 +27,18 @@ Spring MVC에서 DispatcherServlet은 **모든 웹 요청의 진입점**으로 �
 | ⑧ | DispatcherServlet → ViewResolver | View 이름으로 JSP 경로 찾기 |
 | ⑨ | ViewResolver → DispatcherServlet | 실제 View 경로 반환 |
 | ⑩ | DispatcherServlet → View | View 렌더링 후 사용자에게 응답 |
+
+---
+
+## 📥 전체 흐름 추가 시각화 (View 방식)
+
+![전통 View 기반 전체 흐름도 - Developer Role 명시](/image%20(2).png)
+
+🧠 **설명**  
+- 파란색: Spring이 처리하는 영역  
+- 주황색: 개발자가 작성해야 하는 코드  
+- 초록색: DB 등 외부 자원  
+→ 전체 MVC 구조를 한눈에 파악할 수 있어요!
 
 ---
 
@@ -78,6 +89,19 @@ Spring MVC에서 DispatcherServlet은 **모든 웹 요청의 진입점**으로 �
 - Controller는 Service → Repository → DB로 요청 전달
 - 결과 데이터를 Model에 담아 ViewResolver를 통해 JSP 파일 렌더링
 - 사용자에게 최종 HTML 응답 반환
+
+---
+
+## 🧪 전체 흐름을 설명형으로 표현한 이미지
+
+![설명형 흐름도](/image%20(4).png)
+
+이 그림은 전체 DispatcherServlet 구조를 마치 **만화처럼 설명**해주는 버전입니다.  
+초보자도 직관적으로 흐름을 이해할 수 있어요!
+
+📌 **포인트 요약**  
+- 요청 → DispatcherServlet → Handler → Controller → ViewResolver → JSP
+- 결과적으로 HTML 또는 JSON 응답 반환!
 
 ---
 

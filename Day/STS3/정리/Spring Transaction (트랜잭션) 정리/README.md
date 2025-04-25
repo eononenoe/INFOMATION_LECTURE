@@ -182,3 +182,84 @@ public void addMemoTx(MemoDto dto) {
 ## ✅ 한 줄 요약
 
 > **트랜잭션은 DB의 신뢰성과 무결성을 지키는 핵심 개념! ACID 원칙을 따르고, 스프링에서는 `@Transactional`로 쉽게 적용 가능!** ✅
+
+## 🧪 트랜잭션 실습 코드 정리
+
+### 📄 MemoServiceImpl.java
+
+```java
+@Service
+public class MemoServiceImpl {
+    @Autowired
+    MemoDaoImpl dao;
+
+    // 트랜잭션 적용 메서드
+    @Transactional(rollbackFor = Exception.class)
+    public void insertMultiTx(MemoDto dto) throws Exception {
+        dao.insert(dto);
+        dao.insert(dto); // 일부러 예외 유도 → 롤백 테스트
+    }
+
+    public void insertNoTx(MemoDto dto) throws Exception {
+        dao.insert(dto);
+        dao.insert(dto); // 트랜잭션 미적용 시 하나만 들어감
+    }
+}
+```
+
+➡ `@Transactional`이 붙은 `insertMultiTx()`는 **중복 입력 시 모두 롤백**되고, `insertNoTx()`는 **하나는 입력됨**.  
+즉, 트랜잭션의 롤백 효과를 명확히 확인할 수 있음! 💥
+
+---
+
+### 📄 MemoDaoImpl.java
+
+```java
+@Repository
+public class MemoDaoImpl {
+    @Autowired
+    SqlSessionTemplate session;
+
+    public void insert(MemoDto dto) {
+        session.insert("memo.insert", dto);
+    }
+}
+```
+
+➡ `SqlSessionTemplate`을 통해 실제 insert 수행.  
+Mapper에서 동일한 PK를 넣으면 예외가 발생하고, `@Transactional`이 처리함.
+
+---
+
+### 📄 GlobalExceptionHandler.java
+
+```java
+@ControllerAdvice
+public class GlobalExceptionHandler {
+    @ExceptionHandler(Exception.class)
+    public String error(Exception e, Model model) {
+        model.addAttribute("error", "⚠ 트랜잭션 롤백 발생: " + e.getMessage());
+        return "error";
+    }
+}
+```
+
+➡ 모든 예외를 잡아주는 글로벌 예외 처리기 💡  
+`rollbackFor = Exception.class`를 선언하면 이 핸들러에서 메시지를 확인할 수 있음!
+
+---
+
+### 📄 실습 흐름 요약
+
+1. `MemoServiceImpl`의 `insertMultiTx()` 호출
+2. `MemoDaoImpl`을 통해 두 번 insert
+3. 두 번째 insert에서 예외 → `@Transactional`로 ROLLBACK
+4. `GlobalExceptionHandler`가 예외를 잡아 사용자에게 알림
+
+🧠 이렇게 트랜잭션의 중요성과 적용 효과를 실습으로 명확히 확인 가능!
+
+---
+
+## ✅ 한 줄 요약
+
+> **트랜잭션은 DB의 신뢰성과 무결성을 지키는 핵심 개념! ACID 원칙을 따르고, 스프링에서는 `@Transactional`로 쉽게 적용 가능! 실습을 통해 ROLLBACK 동작을 직접 체험하자!** ✅

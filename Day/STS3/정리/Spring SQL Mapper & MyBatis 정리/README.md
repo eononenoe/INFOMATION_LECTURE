@@ -125,6 +125,89 @@ public interface MemoMapper {
 ```
 
 ---
+---
+
+## 💻 실습 코드 정리 (ex05_dataSource 기반)
+
+### 📄 MemoDto.java
+
+```java
+public class MemoDto {
+    private int id;
+    private String text;
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+}
+```
+
+➡ MyBatis에서 데이터를 매핑할 **기본 DTO 클래스**에요.  
+SQL 결과와 필드를 연결해주는 역할을 합니다!
+
+---
+
+### 📄 MemoMapper.xml (부분)
+
+```xml
+<mapper namespace="memo">
+    <insert id="insert" parameterType="MemoDto">
+        INSERT INTO tbl_memo (id, text) VALUES (#{id}, #{text})
+    </insert>
+
+    <select id="selectAll" resultType="MemoDto">
+        SELECT * FROM tbl_memo
+    </select>
+</mapper>
+```
+
+➡ namespace가 `"memo"`로 설정된 **XML 기반 Mapper**  
+`MemoDaoImpl.java`에서 이 mapper의 `insert`를 호출합니다.
+
+---
+
+### 📄 MemoDaoImpl.java
+
+```java
+@Repository
+public class MemoDaoImpl {
+    @Autowired
+    SqlSessionTemplate session;
+
+    public void insert(MemoDto dto) {
+        session.insert("memo.insert", dto);
+    }
+}
+```
+
+➡ SQL문을 직접 호출하는 DAO 클래스입니다.  
+MyBatis의 `SqlSessionTemplate`을 통해 XML Mapper를 실행합니다.
+
+---
+
+### 📄 실습 흐름 요약
+
+1. 사용자가 메모 데이터를 입력
+2. `MemoDaoImpl`이 `SqlSessionTemplate`으로 XML의 insert 쿼리 호출
+3. XML의 `<insert>`가 실행되어 `tbl_memo`에 저장
+4. 결과는 `MemoDto` 객체로 매핑되어 반환
+
+🔁 실습을 통해 SQL Mapper 방식의 전체 흐름을 손쉽게 이해할 수 있어요!
+
+---
 
 ### 🧪 동적 SQL 예시
 
