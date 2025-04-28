@@ -96,64 +96,65 @@
     - root-context.xml
 
 - ## Day_79
-  - main/java/com/example/app/config
-  - DataSourceConfig.java
-  - MybatisConfig.java
-  - PersonComponent.java
-  - PersonDtoBeanConfig.java
-- main/java/com/example/app/controller
-  - ExceptionTestController.java
-  - HomeController.java
-  - MemoController.java
-  - ParameterTestController.java
-  - SimpleController.java
-  - UserController.java
-- main/java/com/example/app/controller/exception
-  - GlobalExceptionHandler.java
-- main/java/com/example/app/domain/dao
-  - MemoDaoImpl.java
-- main/java/com/example/app/domain/dto
-  - MemoDto.java
-  - PersonDto.java
-  - UserDto.java
-- main/java/com/example/app/domain/mapper
-  - MemoMapper.java
-- main/java/com/example/app/domain/service
-  - MemoServiceImpl.java
-- main/resources
-  - log4j.xml
-- main/resources/mapper
-  - MemoMapper.xml
-- main/webapp/WEB-INF
-  - web.xml
-- main/webapp/WEB-INF/spring
-  - root-context.xml
-- main/webapp/WEB-INF/spring/appServlet
-  - servlet-context.xml
-- main/webapp/WEB-INF/views
-  - global_error.jsp
-  - home.jsp
-  - join.jsp
-- main/webapp/WEB-INF/views/except
-  - error.jsp
-  - page01.jsp
-  - page02.jsp
-- main/webapp/WEB-INF/views/memo
-  - add.jsp
-- main/webapp/WEB-INF/views/param
-  - forward_result.jsp
-  - page01.jsp
-  - redirect_result.jsp
-- main/webapp/WEB-INF/views/test
-  - abcd.jsp
-  - test1.jsp
-- test/java/DbTests
-  - DataSourceTests.java
-  - MybatisTests.java
-- test/java/DiTests
-  - Ditests.java
-- test/resources
-  - log4j.xml
+  - 05
+      - main/java/com/example/app/config
+      - DataSourceConfig.java
+      - MybatisConfig.java
+      - PersonComponent.java
+      - PersonDtoBeanConfig.java
+    - main/java/com/example/app/controller
+      - ExceptionTestController.java
+      - HomeController.java
+      - MemoController.java
+      - ParameterTestController.java
+      - SimpleController.java
+      - UserController.java
+    - main/java/com/example/app/controller/exception
+      - GlobalExceptionHandler.java
+    - main/java/com/example/app/domain/dao
+      - MemoDaoImpl.java
+    - main/java/com/example/app/domain/dto
+      - MemoDto.java
+      - PersonDto.java
+      - UserDto.java
+    - main/java/com/example/app/domain/mapper
+      - MemoMapper.java
+    - main/java/com/example/app/domain/service
+      - MemoServiceImpl.java
+    - main/resources
+      - log4j.xml
+    - main/resources/mapper
+      - MemoMapper.xml
+    - main/webapp/WEB-INF
+      - web.xml
+    - main/webapp/WEB-INF/spring
+      - root-context.xml
+    - main/webapp/WEB-INF/spring/appServlet
+      - servlet-context.xml
+    - main/webapp/WEB-INF/views
+      - global_error.jsp
+      - home.jsp
+      - join.jsp
+    - main/webapp/WEB-INF/views/except
+      - error.jsp
+      - page01.jsp
+      - page02.jsp
+    - main/webapp/WEB-INF/views/memo
+      - add.jsp
+    - main/webapp/WEB-INF/views/param
+      - forward_result.jsp
+      - page01.jsp
+      - redirect_result.jsp
+    - main/webapp/WEB-INF/views/test
+      - abcd.jsp
+      - test1.jsp
+    - test/java/DbTests
+      - DataSourceTests.java
+      - MybatisTests.java
+    - test/java/DiTests
+      - Ditests.java
+    - test/resources
+      - log4j.xml
   
 - ## Day_80
   - 07
