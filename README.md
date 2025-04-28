@@ -367,7 +367,7 @@
 <details>
 <summary>🔁 트랜잭션과 데이터 일관성</summary>
 
-- 🔗 [Spring Transaction (트랜잭션) 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Transaction%20(%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Spring Transaction 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/STS3/%EC%A0%95%EB%A6%AC/Spring%20Transaction%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
