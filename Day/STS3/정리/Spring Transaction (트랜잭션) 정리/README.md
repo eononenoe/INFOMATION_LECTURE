@@ -1,4 +1,4 @@
-# 🔄 Spring Transaction (트랜잭션) 정리
+# 🔄 Spring Transaction 정리
 
 ## 📌 개요
 
