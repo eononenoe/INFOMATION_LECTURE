@@ -49,6 +49,16 @@
 
 ## 🧪 예제 코드 (Examples)
 
+### 🧠 Pointcut 표현식 예시
+
+| 표현식 예시 | 설명 |
+|:-----------|:-----|
+| `execution(* com.example..*.*(..))` | com.example 하위 모든 메서드에 적용 |
+| `execution(public * *(..))` | 모든 public 메서드에 적용 |
+| `execution(* *..save*(..))` | 이름이 save로 시작하는 메서드에 적용 |
+
+---
+
 ### 📋 AOP 설정 클래스
 ```java
 @Aspect
