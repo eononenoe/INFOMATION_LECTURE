@@ -29,18 +29,18 @@
 <details>
 <summary>🗃 데이터베이스 기초 및 실습</summary>
 
-- 🔗 [정보 피라미드 & 데이터베이스 기초](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/정보%20피라미드%20&%20데이터베이스%20기초)
-- 🔗 [MySQL 내부 구조 & Cmd 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/MySQL%20내부%20구조%20&%20Cmd%20실습)
-- 🔗 [SQL 명령어 실습 (DDL, DML, DCL)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/SQL%20명령어%20실습%20(DDL%20DML%20DCL))
-- 🔗 [MySQL 실습 DDL, DML, 사용자 권한 관리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/MySQL%20실습%20DDL,DML,사용자%20권한%20관리)
-- 🔗 [데이터베이스 설계 절차 & E-R 모델](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/데이터베이스%20설계%20절차%20&%20E-R%20모델)
+- 🔗 [정보 피라미드 & 데이터베이스 기초](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/%EC%A0%95%EB%B3%B4%20%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C%20%26%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EC%B4%88)
+- 🔗 [MySQL 내부 구조 & Cmd 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/MySQL%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20%26%20Cmd%20%EC%8B%A4%EC%8A%B5)
+- 🔗 [SQL 명령어 실습 (DDL, DML, DCL)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/SQL%20%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%8B%A4%EC%8A%B5%20(DDL%20%20DML%20%20DCL))
+- 🔗 [MySQL 실습 DDL, DML, 사용자 권한 관리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/MySQL%20%EC%8B%A4%EC%8A%B5%20DDL%2C%20DML%2C%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EA%B6%8C%ED%95%9C%20%EA%B4%80%EB%A6%AC)
+- 🔗 [데이터베이스 설계 절차 & E-R 모델](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EC%84%A4%EA%B3%84%20%EC%A0%88%EC%B0%A8%20%26%20E-R%20%EB%AA%A8%EB%8D%B8)
 
 </details>
 
 <details>
 <summary>⚙️ 웹 개발 환경</summary>
 
-- 🔗 [미들웨어 & 개발 환경 구축 정리 (JAVA, Tomcat, Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/미들웨어%20&%20개발%20환경%20구축%20정리%20(JAVA,Tomcat,Eclipse))
+- 🔗 [미들웨어 & 개발 환경 구축 정리 (JAVA, Tomcat, Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4%20%26%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%B6%95%20%EC%A0%95%EB%A6%AC%20(JAVA%2C%20Tomcat%2C%20Eclipse))
 
 </details>
 
@@ -58,26 +58,26 @@
 
 - 🔗 [Git & GitHub 기본 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/Git%20&%20GitHub%20기본%20정리)
 - 🔗 [SourceTree 및 Git Workflow 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/SourceTree%20&%20Git%20Workflow%20정리)
-- 🔗 [JDK 구버전 설치 및 개발환경 설정 (Tomcat, Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/JDK%20구버전%20설치,%20Tomcat,%20Eclipse%20개발%20환경%20셋팅)
+- 🔗 [JDK 구버전 설치 및 개발환경 설정 (Tomcat, Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/JDK%20%EA%B5%AC%EB%B2%84%EC%A0%84%20%EC%84%A4%EC%B9%98%2C%20Tomcat%2C%20Eclipse%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EC%84%B8%ED%8C%85%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
 <details>
 <summary>🐧 Linux 기본 및 서버 관리</summary>
 
-- 🔗 [Linux 기본 명령어 실습 (ls, mkdir, touch, cp 등)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/Linux%20기본%20명령어%20(ls,mkdir,touch,cp)%20실습%20정리)
-- 🔗 [Linux 기본 명령어 실습 (mv, rm, cat, head, tail 등)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/Linux%20기본%20명령어%20(mv,rm,cat,head,tail)%20실습%20정리)
-- 🔗 [Linux 사용자 계정 및 프로세스 관리 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/Linux%20사용자%20계정%20및%20프로세스%20관리%20정리)
-- 🔗 [Linux 서버 클라이언트, VMware, Putty 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/LINUX,SERVERCLIENT,VMware%20&%20Putty%20설치%20정리)
-- 🔗 [VMware Ping 확인, Snapshot, Putty 설치 및 기본 명령어 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/VMware%20Ping%20확인,Snapshot,Putty%20설정%20및%20리눅스%20기본%20명령어)
+- 🔗 [Linux 기본 명령어 실습 (ls, mkdir, touch, cp 등)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/Linux%20%EA%B8%B0%EB%B3%B8%20%EB%AA%85%EB%A0%B9%EC%96%B4%20(ls%2C%20mkdir%2C%20touch%2C%20cp)%20%EC%8B%A4%EC%8A%B5%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Linux 기본 명령어 실습 (mv, rm, cat, head, tail 등)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/Linux%20%EA%B8%B0%EB%B3%B8%20%EB%AA%85%EB%A0%B9%EC%96%B4%20(mv%2C%20rm%2C%20cat%2C%20head%2C%20tail%2C%20more%2C%20%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%EC%85%98%2C%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8)%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Linux 사용자 계정 및 프로세스 관리 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/Linux%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%EA%B3%84%EC%A0%95%20%EB%B0%8F%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%20%EA%B4%80%EB%A6%AC%20%EC%A0%95%EB%A6%AC)
+- 🔗 [LINUX, SERVER/CLIENT, VMware & Putty 설치 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/LINUX%2C%20SERVERCLIENT%2C%20VMware%20%26%20Putty%20%EC%84%A4%EC%B9%98%20%EC%A0%95%EB%A6%AC)
+- 🔗 [VMware Ping 확인, Snapshot, Putty 설치 및 기본 명령어 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/VMware%20Ping%20%ED%99%95%EC%9D%B8%2C%20Snapshot%2C%20Putty%20%EC%84%A4%EC%A0%95%20%EB%B0%8F%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EB%B3%B8%20%EB%AA%85%EB%A0%B9%EC%96%B4)
 
 </details>
 
 <details>
 <summary>🛠 기타 유용한 도구 및 설정</summary>
 
-- 🔗 [VI 편집기 사용법, 권한 관리, 계정 생성 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/VI%20편집기,권한관리,계정생성%20정리)
-- 🔗 [Java 코딩 테스트 문제 모음](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/정리/Java%20Coding%20Test%20문제%20모음)
+- 🔗 [VI 편집기 사용법, 권한 관리, 계정 생성 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/VI%20%ED%8E%B8%EC%A7%91%EA%B8%B0%2C%20%EA%B6%8C%ED%95%9C%20%EA%B4%80%EB%A6%AC%2C%20%EA%B3%84%EC%A0%95%20%EC%83%9D%EC%84%B1%20%EC%A0%95%EB%A6%AC)
+- 🔗 [Java 코딩 테스트 문제 모음](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DEVELOPMENT-ENVIRONMENT/%EC%A0%95%EB%A6%AC/Java%20Coding%20Test%20%EB%AC%B8%EC%A0%9C%20%EB%AA%A8%EC%9D%8C)
 
 </details>
 
@@ -110,7 +110,7 @@
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/HTML_CSS)
 - 🔗 [CSS Animation, Slider, Media Query 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/CSS%20Animation%20Slider%20Media%20Query%20정리)
-- 🔗 [CSS Motion Effects 정리 (Transition, Transform)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/CSS%20Motion%20Effects%20정리%20(Transition%20Transform3D%20Animation))
+- 🔗 [CSS Motion Effects 정리 (Transition, Transform)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/CSS%20Motion%20Effects%20%EC%A0%95%EB%A6%AC%20(Transition%20%20Transform3D%20%20Animation))
 - 🔗 [HTML & CSS 기본 구조 및 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20기본%20구조%20+%20심화%20실습)
 - 🔗 [HTML & CSS 레이아웃 심화 총정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20레이아웃%20심화%20총정리)
 - 🔗 [HTML & CSS 박스모델과 선택자 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20박스모델과%20선택자%20정리)
@@ -123,7 +123,6 @@
 <summary>💻 JavaScript 기초 및 실습</summary>
   
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
-- 🔗 [JAVASCRIPT + HTML + CSS 학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
 - 🔗 [JavaScript 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JavaScript%20기초%20정리)
 - 🔗 [JS Bootstrap, Chart.js, GSAP, ScrollMagic 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20Bootstrap,Chart.js,GSAP,ScrollMagic%20실습%20모음)
 - 🔗 [JS DOM 탐색, 노드 생성 및 삭제, 동적 HTML 수정](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20DOM%20탐색,노드%20생성%20삭제,동기비동기%20개념)
