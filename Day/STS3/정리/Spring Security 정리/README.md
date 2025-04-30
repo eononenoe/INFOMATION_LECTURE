@@ -1,3 +1,4 @@
+
 # 📚 Spring Security 정리
 
 ## 📌 개요 (Overview)
@@ -20,58 +21,104 @@
 | 세션/토큰 기반 인증   | 세션 또는 JWT를 통한 Stateless 인증 가능 |
 | 메서드 수준 보안 지원 | `@Secured`, `@PreAuthorize` 등으로 메서드 접근 제어 |
 
-### 🌟 SecurityFilterChain
+---
+
+## 🔁 SecurityFilterChain 구조
+
+![필터 체인 구조](/img%20(1).png)
+
 - Spring Security는 **FilterChain** 구조로 요청을 감싸서 인증/권한 체크를 진행합니다.
 - 요청이 들어오면 다양한 Security Filter들을 순서대로 거쳐 최종적으로 인증 여부를 판단합니다.
 
-**대표적인 필터 예시:**
-- `UsernamePasswordAuthenticationFilter`: 사용자 로그인 처리
-- `BasicAuthenticationFilter`: HTTP Basic 인증 처리
-- `SecurityContextPersistenceFilter`: SecurityContext 관리
-- `ExceptionTranslationFilter`: 인증/권한 오류 처리
+### 🔐 대표적인 필터들
 
-### 🌟 Remember-Me 기능
-- 사용자가 로그인할 때 "로그인 상태 유지" 체크박스를 선택하면 세션이 만료되어도 로그인 상태를 유지시켜주는 기능
-- 서버는 브라우저에 토큰을 발급해 저장하고, 클라이언트는 이 토큰을 통해 자동 로그인 처리 가능
-
-**Remember-Me 핵심 흐름:**
-1. 최초 로그인 시 서버가 Remember-Me 토큰 생성
-2. 브라우저 쿠키에 토큰 저장
-3. 세션이 사라져도 쿠키를 통해 자동 인증 시도
+| 필터명 | 설명 |
+|------|------|
+| `SecurityContextPersistenceFilter` | 인증정보를 `SecurityContext`에 저장/복원 |
+| `UsernamePasswordAuthenticationFilter` | 로그인 폼 기반 아이디/비밀번호 인증 |
+| `BasicAuthenticationFilter` | HTTP Basic 인증 처리 |
+| `ExceptionTranslationFilter` | 인증/인가 예외 처리 |
+| `LogoutFilter` | 로그아웃 처리 |
+| `FilterSecurityInterceptor` | 인가 처리 및 접근 결정 |
 
 ---
 
-## ⚠ 주의사항 (Cautions)
+## 🔐 인증 처리 흐름
 
-- Spring Security 설정은 **Filter 기반**이기 때문에 필터 순서에 민감함.
-- Remember-Me 토큰 유출에 주의해야 하며, 토큰에는 민감 정보를 직접 담지 말아야 함.
-- 기본 설정만 사용하면 편리하지만, 실서비스에서는 반드시 **커스터마이징** 필요 (ex. 커스텀 로그인 실패 핸들러 등)
+![인증 처리 흐름](/img.png)
+
+1. 사용자가 로그인 폼에 ID/PW 입력
+2. `UsernamePasswordAuthenticationToken` 객체에 담김
+3. `AuthenticationManager`를 통해 `AuthenticationProvider`로 전달
+4. `UserDetailsService`가 DB에서 사용자 정보 조회
+5. 일치 시 인증 성공 → `SecurityContextHolder`에 저장
+
+---
+
+## 🔐 Remember-Me 기능 (자동 로그인)
+
+- 사용자가 로그인할 때 "로그인 상태 유지"를 체크하면 세션이 만료되어도 로그인 상태 유지
+- 쿠키를 통해 토큰을 저장하고, 이후 자동 인증 시도
+
+###  핵심 동작
+
+```java
+http.rememberMe()
+    .key("remember-me-key")
+    .tokenValiditySeconds(86400); // 하루 유지
+```
+
+###  토큰 저장 방식
+
+- `TokenBasedRememberMeServices`: 단순 해시 토큰 쿠키 저장
+- `PersistentTokenBasedRememberMeServices`: DB에 저장된 토큰 사용
+- 둘 모두 `UserDetailsService`가 필요함
+
+---
+
+## 🏗 Layered Architecture vs MVC
+
+### MVC 구조
+
+![3계층 아키텍처 (단순)](/img%20(2).png)
+
+- Model: 데이터/비즈니스 로직
+- View: 사용자에게 보이는 화면
+- Controller: 입력 수신, 흐름 제어
+
+### 3계층 아키텍처 (Layered Architecture)
+
+![3계층 아키텍처 상세](/img%20(3).png)
+
+- Presentation Layer
+- Service Layer
+- Data Access Layer
+
+MVC는 Layered Architecture 내부에 포함될 수 있는 구현 패턴입니다.
 
 ---
 
 ## 🧪 예제 코드 (Examples)
 
-### 📋 Maven 의존성 추가 (pom.xml)
+### 📋 Maven 의존성 추가
+
 ```xml
-<!-- Spring Security -->
 <dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-web</artifactId>
-    <version>5.0.7.RELEASE</version>
 </dependency>
 <dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-config</artifactId>
-    <version>5.0.7.RELEASE</version>
 </dependency>
 ```
 
-### 📋 Security 기본 설정 (Java Config)
+### 📋 Security 설정 (Java Config)
+
 ```java
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
@@ -86,30 +133,70 @@ public class SecurityConfig {
             .and()
             .rememberMe()
                 .key("remember-me-key")
-                .tokenValiditySeconds(86400) // 1일 유지
+                .tokenValiditySeconds(86400)
             .and()
             .logout()
                 .permitAll();
-
         return http.build();
     }
 }
 ```
 
-### 📋 Remember-Me 사용 방법
-- `rememberMe()` 설정 추가
-- `key()`를 지정해 고유 토큰 생성 보장
-- `tokenValiditySeconds()`로 유효기간 설정 (초 단위)
+---
+
+## 🛠 사용자 인증 흐름 예시
+
+### 📦 User Entity
 
 ```java
-http.rememberMe()
-    .key("uniqueAndSecret")
-    .tokenValiditySeconds(86400); // 하루 유지
+@Entity
+public class User implements UserDetails {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String email;
+    private String password;
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(new SimpleGrantedAuthority("user"));
+    }
+
+    @Override public String getUsername() { return email; }
+    @Override public String getPassword() { return password; }
+    @Override public boolean isAccountNonExpired() { return true; }
+    @Override public boolean isAccountNonLocked() { return true; }
+    @Override public boolean isCredentialsNonExpired() { return true; }
+    @Override public boolean isEnabled() { return true; }
+}
+```
+
+### 📦 UserRepository
+
+```java
+public interface UserRepository extends JpaRepository<User, Long> {
+    Optional<User> findByEmail(String email);
+}
+```
+
+### 📦 UserDetailsService 구현
+
+```java
+@RequiredArgsConstructor
+@Service
+public class UserDetailService implements UserDetailsService {
+    private final UserRepository userRepository;
+
+    @Override
+    public User loadUserByUsername(String email) {
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalArgumentException(email));
+    }
+}
 ```
 
 ---
 
-## ✅ 한 줄 요약 (1-Line Summary)
+## 한 줄 요약 (1-Line Summary)
 
-> **Spring Security**는 필터 체인 기반으로 인증과 권한을 처리하며, Remember-Me로 **로그인 상태 유지**도 간편하게 구현할 수 있다! 🔐🚀
-
+> **Spring Security**는 필터 체인 기반으로 인증과 권한을 처리하며, Remember-Me 기능과 구조화된 설계를 통해 보안성과 확장성을 동시에 제공한다! 🔐🚀
