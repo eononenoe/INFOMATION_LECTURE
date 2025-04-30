@@ -25,7 +25,7 @@
 
 ## 🔁 SecurityFilterChain 구조
 
-![필터 체인 구조](/img%20(1).png)
+![필터 체인 구조](img%20(1).png)
 
 - Spring Security는 **FilterChain** 구조로 요청을 감싸서 인증/권한 체크를 진행합니다.
 - 요청이 들어오면 다양한 Security Filter들을 순서대로 거쳐 최종적으로 인증 여부를 판단합니다.
@@ -45,7 +45,7 @@
 
 ## 🔐 인증 처리 흐름
 
-![인증 처리 흐름](/img.png)
+![인증 처리 흐름](img.png)
 
 1. 사용자가 로그인 폼에 ID/PW 입력
 2. `UsernamePasswordAuthenticationToken` 객체에 담김
@@ -80,7 +80,7 @@ http.rememberMe()
 
 ### MVC 구조
 
-![3계층 아키텍처 (단순)](/img%20(2).png)
+![3계층 아키텍처 (단순)](img%20(2).png)
 
 - Model: 데이터/비즈니스 로직
 - View: 사용자에게 보이는 화면
@@ -88,7 +88,7 @@ http.rememberMe()
 
 ### 3계층 아키텍처 (Layered Architecture)
 
-![3계층 아키텍처 상세](/img%20(3).png)
+![3계층 아키텍처 상세](img%20(3).png)
 
 - Presentation Layer
 - Service Layer
