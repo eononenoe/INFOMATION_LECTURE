@@ -109,13 +109,13 @@
 <summary>🎨 HTML & CSS 기초 및 실습</summary>
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/HTML_CSS)
-- 🔗 [CSS Animation, Slider, Media Query 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/CSS%20Animation%20Slider%20Media%20Query%20정리)
+- 🔗 [CSS Animation, Slider, Media Query 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/CSS%20Animation%20%20Slider%20%20Media%20Query%20%EC%A0%95%EB%A6%AC)
 - 🔗 [CSS Motion Effects 정리 (Transition, Transform)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/CSS%20Motion%20Effects%20%EC%A0%95%EB%A6%AC%20(Transition%20%20Transform3D%20%20Animation))
-- 🔗 [HTML & CSS 기본 구조 및 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20기본%20구조%20+%20심화%20실습)
+- 🔗 [HTML & CSS 기본 구조 및 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/HTML%20%26%20CSS%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%A1%B0%20%2B%20%EC%8B%AC%ED%99%94%20%EC%8B%A4%EC%8A%B5%20%EC%A0%95%EB%A6%AC)
 - 🔗 [HTML & CSS 레이아웃 심화 총정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20레이아웃%20심화%20총정리)
 - 🔗 [HTML & CSS 박스모델과 선택자 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20박스모델과%20선택자%20정리)
 - 🔗 [HTML & CSS 포지셔닝과 GNB 메뉴 총정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20&%20CSS%20포지셔닝과%20GNB%20메뉴%20총정리)
-- 🔗 [HTML Form 고급 작성법 및 실전 예제 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20Form%20고급%20작성법%20및%20실전%20예제%20정리)
+- 🔗 [HTML Form 고급 작성법 및 실전 예제 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/HTML%20Form%20%EA%B3%A0%EA%B8%89%20%EC%9E%91%EC%84%B1%EB%B2%95%20%26%20%EC%8B%A4%EC%A0%84%20%EC%98%88%EC%A0%9C%20%EC%A0%95%EB%A6%AC)
 - 🔗 [HTML 기초와 실습 예제 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/HTML%20기초와%20실습%20예제%20정리)
 
 </details>
@@ -123,16 +123,16 @@
 <summary>💻 JavaScript 기초 및 실습</summary>
   
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/JAVASCRIPT%2BHTML_CSS)
-- 🔗 [JavaScript 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JavaScript%20기초%20정리)
-- 🔗 [JS Bootstrap, Chart.js, GSAP, ScrollMagic 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20Bootstrap,Chart.js,GSAP,ScrollMagic%20실습%20모음)
-- 🔗 [JS DOM 탐색, 노드 생성 및 삭제, 동적 HTML 수정](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20DOM%20탐색,노드%20생성%20삭제,동기비동기%20개념)
-- 🔗 [JS 객체지향, 상속, 클래스, 함수 및 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20객체지향,상속,기본문법%20심화%20학습)
-- 🔗 [JS 고급 마우스 이벤트 (Drag & Drop, DropZone)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20고급%20마우스%20이벤트%20(Drag%20Drop,우클릭이동))
-- 🔗 [JS 동적 메뉴 생성 + 함수의 개념 + 스코프 & 클로저](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20동적%20메뉴%20생성+함수개념+스코프클로저)
-- 🔗 [JS 배열과 객체, 데이터 가공 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20배열과%20객체,데이터%20가공%20실습)
-- 🔗 [JS 비동기(Async)와 다양한 라이브러리 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20비동기(Async)%20&%20다양한%20라이브러리%20실습)
-- 🔗 [JS 콜백함수, 마우스 이벤트, 프로그래밍 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20콜백함수,마우스이벤트,프로젝트%20메인화면)
-- 🔗 [JS 키보드 이벤트와 화면 반응 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/정리/JS%20키보드%20이벤트&화면%20반응형%20(입력처리,키보드,화면크기))
+- 🔗 [JavaScript 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JavaScript%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JS Bootstrap, Chart.js, GSAP, ScrollMagic 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20Bootstrap%2C%20Chart.js%2C%20GSAP%2C%20ScrollMagic%20%EC%8B%A4%EC%8A%B5%20%EB%AA%A8%EC%9D%8C)
+- 🔗 [JS DOM 탐색, 노드 생성 삭제, 동기비동기 개념](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20DOM%20%ED%83%90%EC%83%89%2C%20%EB%85%B8%EB%93%9C%20%EC%83%9D%EC%84%B1%20%EC%82%AD%EC%A0%9C%2C%20%EB%8F%99%EA%B8%B0%EB%B9%84%EB%8F%99%EA%B8%B0%20%EA%B0%9C%EB%85%90)
+- 🔗 [JS 객체지향, 상속, 기본 문법 심화 학습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%2C%20%EC%83%81%EC%86%8D%2C%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95%20%EC%8B%AC%ED%99%94%20%ED%95%99%EC%8A%B5)
+- 🔗 [JS 고급 마우스 이벤트 (Drag & Drop, DropZone)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EA%B3%A0%EA%B8%89%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20(Drag%20%26%20Drop%2C%20%EC%9A%B0%ED%81%B4%EB%A6%AD%20%EC%9D%B4%EB%8F%99))
+- 🔗 [JS 동적 메뉴 생성 + 함수의 개념 + 스코프 & 클로저](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EB%8F%99%EC%A0%81%20%EB%A9%94%EB%89%B4%20%EC%83%9D%EC%84%B1%20%2B%20%ED%95%A8%EC%88%98%EC%9D%98%20%EA%B0%9C%EB%85%90%20%2B%20%EC%8A%A4%EC%BD%94%ED%94%84%20%26%20%ED%81%B4%EB%A1%9C%EC%A0%80)
+- 🔗 [JS 배열과 객체, 데이터 가공 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EA%B0%9D%EC%B2%B4%2C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EA%B0%80%EA%B3%B5%20%EC%8B%A4%EC%8A%B5)
+- 🔗 [JS 비동기(Async)와 다양한 라이브러리 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EB%B9%84%EB%8F%99%EA%B8%B0(Async)%20%26%20%EB%8B%A4%EC%96%91%ED%95%9C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%20%EC%8B%A4%EC%8A%B5)
+- 🔗 [JS 콜백함수, 마우스 이벤트, 프로그래밍 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%EC%BD%9C%EB%B0%B1%ED%95%A8%EC%88%98%20%2C%20%EB%A7%88%EC%9A%B0%EC%8A%A4%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%2C%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4)
+- 🔗 [JS 키보드 이벤트와 화면 반응 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SCREEN-IMPL/%EC%A0%95%EB%A6%AC/JS%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%26%20%ED%99%94%EB%A9%B4%20%EB%B0%98%EC%9D%91%ED%98%95%20(%EC%9E%85%EB%A0%A5%20%EC%B2%98%EB%A6%AC%2C%20%ED%82%A4%EB%B3%B4%EB%93%9C%2C%20%ED%99%94%EB%A9%B4%ED%81%AC%EA%B8%B0))
 
 </details>
 </details>
@@ -150,17 +150,17 @@
 - 🔗 [JAVA 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20기초%20정리)
 - 🔗 [JAVA Scanner 사용과 기본 연산자 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20Scanner%20사용과%20기본%20연산자%20정리)
 - 🔗 [JAVA while문과 반복 패턴 연습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20while문과%20반복%20패턴%20연습%20정리)
-- 🔗 [JAVA 반복문, 제어문, 클래스 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20반복문,제어문,클래스%20기초%20정리)
-- 🔗 [JAVA 자료형과 상속 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20자료형과%20상속%20정리)
+- 🔗 [JAVA 반복문, 제어문, 클래스 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EB%B0%98%EB%B3%B5%EB%AC%B8(while%2Cfor)%2C%20%EC%A0%9C%EC%96%B4%EB%AC%B8(break%2Ccontinue)%2C%20%ED%81%B4%EB%9E%98%EC%8A%A4%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JAVA 자료형과 상속 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EC%9E%90%EB%A3%8C%ED%98%95%EA%B3%BC%20%EC%83%81%EC%88%98%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
 <details>
 <summary>🧩 객체지향 기초</summary>
 
-- 🔗 [JAVA 객체지향 기초 (정보은닉, 캡슐화, this, String, 배열) 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20객체지향%20기초%20(정보은닉,%20캡슐화,this,String,배열)%20정리)
-- 🔗 [JAVA 핵심 정리 (싱글톤, static, 배열, 상속, 오버라이딩)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20핵심%20정리%20(싱글톤,static,배열,상속,오버라이딩))
-- 🔗 [JAVA 핵심 정리 (업캐스팅, 다운캐스팅, 추상클래스, 인터페이스)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20핵심%20정리%20(업캐스팅,다운캐스팅,추상클래스,인터페이스))
+- 🔗 [JAVA 객체지향 기초 (정보은닉, 캡슐화, this, String, 배열) 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EA%B8%B0%EC%B4%88%20(%EC%A0%95%EB%B3%B4%EC%9D%80%EB%8B%89%2C%20%EC%BA%A1%EC%8A%90%ED%99%94%2C%20%20this%2C%20String%2C%20%EB%B0%B0%EC%97%B4)%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JAVA 핵심 정리 (싱글톤, static, 배열, 상속, 오버라이딩)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC%20(%EC%8B%B1%EA%B8%80%ED%86%A4%2C%20static%2C%20%EB%B0%B0%EC%97%B4%2C%20%EC%83%81%EC%86%8D%2C%20%EC%98%A4%EB%B2%84%EB%9D%BC%EC%9D%B4%EB%94%A9))
+- 🔗 [JAVA 핵심 정리 (업캐스팅, 다운캐스팅, 추상클래스, 인터페이스)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%ED%95%B5%EC%8B%AC%20%EC%A0%95%EB%A6%AC%20(%EC%97%85%EC%BA%90%EC%8A%A4%ED%8C%85%2C%20%EB%8B%A4%EC%9A%B4%EC%BA%90%EC%8A%A4%ED%8C%85%2C%20%EC%B6%94%EC%83%81%ED%81%B4%EB%9E%98%EC%8A%A4%2C%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4))
 
 </details>
 
@@ -175,25 +175,25 @@
 <details>
 <summary>🌐 네트워크와 고급 주제</summary>
 
-- 🔗 [JAVA Socket 체험 + Reflection 완전 정복](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20Socket%20체험%20+%20Reflection%20완전%20정복)
-- 🔗 [JAVA Network, Thread, Swing, JDBC 고급 입출력 + 분산 트랜잭션 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20Network,Thread,Swing,JDBC%20고급%20입출력%20+%20분산%20트랜잭션%20정리)
-- 🔗 [JAVA 네트워크 IO, Jsoup, Selenium, REST API 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20정리%20-%20네트워크IO,Jsoup,Selenium,RESTAPI)
+- 🔗 [JAVA Socket 체험 + Reflection 완전 정복](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20Socket%20%EC%B1%84%ED%8C%85%20%2B%20Reflection(%EB%A6%AC%ED%94%8C%EB%A0%89%EC%85%98)%20%EC%99%84%EC%A0%84%20%EC%A0%95%EB%B3%B5)
+- 🔗 [JAVA Network, Thread, Swing, JDBC 고급 입출력 + 분산 트랜잭션 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20Network%2C%20Thread%2C%20Swing%2C%20JDBC%20%EA%B3%A0%EA%B8%89%20%EC%9E%85%EC%B6%9C%EB%A0%A5%20%2B%20%EB%B6%84%EC%82%B0%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JAVA 네트워크 IO, Jsoup, Selenium, REST API 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EC%A0%95%EB%A6%AC%20-%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20IO%2C%20Jsoup%2C%20Selenium%2C%20REST%20API)
 
 </details>
 
 <details>
 <summary>🏛 MVC 패턴과 실전 프로젝트</summary>
 
-- 🔗 [JAVA MVC 기반 도서 관리 시스템](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20MVC%20기반%20도서%20관리%20시스템)
-- 🔗 [JAVA 도서 관리 시스템 (Oracle + MVC + JDBC + ConnectionPool)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20도서%20관리%20시스템%20(Oracle,MVC,JDBC,ConnectionPool))
+- 🔗 [JAVA MVC 기반 도서 관리 시스템 (with JDBC, Singleton Pattern, Layered Architecture)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20MVC%20%EA%B8%B0%EB%B0%98%20%EB%8F%84%EC%84%9C%20%EA%B4%80%EB%A6%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20(with%20JDBC%2C%20Singleton%20Pattern%2C%20Layered%20Architecture))
+- 🔗 [JAVA 도서 관리 시스템 (Oracle + MVC + JDBC + ConnectionPool)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EB%8F%84%EC%84%9C%20%EA%B4%80%EB%A6%AC%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20(Oracle%20%2B%20MVC%20%2B%20JDBC%20%2B%20ConnectionPool))
 
 </details>
 
 <details>
 <summary>🚀 고급 문법 심화</summary>
 
-- 🔗 [JAVA 람다식 + 스트림 + 함수형 프로그래밍 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20람다식%20+%20스트림%20+%20함수형%20프로그래밍%20정리)
-- 🔗 [JAVA 함수형 프로그래밍 심화 (함수형 인터페이스, 람다, 스트림, 어노테이션)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/정리/JAVA%20함수형%20프로그래밍%20심화)
+- 🔗 [JAVA 람다식 + 스트림 + 함수형 프로그래밍 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%EB%9E%8C%EB%8B%A4%EC%8B%9D%20%2B%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%20%2B%20%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%99%84%EC%A0%84%20%EC%A0%95%EB%A6%AC)
+- 🔗 [JAVA 함수형 프로그래밍 심화 (함수형 인터페이스, 람다, 스트림, 어노테이션)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/JAVA/%EC%A0%95%EB%A6%AC/JAVA%20%ED%95%A8%EC%88%98%ED%98%95%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%8B%AC%ED%99%94%20(%ED%95%A8%EC%88%98%ED%98%95%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%2C%20%EB%9E%8C%EB%8B%A4%2C%20%EC%8A%A4%ED%8A%B8%EB%A6%BC%2C%20%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98))
 
 </details>
 
@@ -216,7 +216,7 @@
 <details>
 <summary>🚀 SQL 심화 연습</summary>
 
-- 🔗 [SQL 기본 + 견연 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DATABASE/정리/SQL%20기본%20+%20견연%20실습%20정리)
+- 🔗 [SQL 기본 + 견연 실습 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/DATABASE/%EC%A0%95%EB%A6%AC/SQL%20%EA%B8%B0%EB%B3%B8%20%20%2B%20%EA%B2%AC%EC%97%B0%20%EC%8B%A4%EC%8A%B5%20%EC%A0%95%EB%A6%AC)
 
 </details>
 
