@@ -407,7 +407,40 @@
 
 <details>
 <summary>📂 SPRINGBOOT 정리</summary>
-  
+
+- 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT)
+
+<details>
+<summary>🧱 기본 개념과 환경 설정</summary>
+
+- 🔗 [Spring INIT](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20INIT)
+- 🔗 [Spring BOOT](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20BOOT)
+
+</details>
+
+<details>
+<summary>🧭 Spring MVC 구조 및 핵심 개념</summary>
+
+- 🔗 [Spring PARAM](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20PARAM)
+- 🔗 [Spring VALIDATION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20VALIDATION)
+
+</details>
+
+<details>
+<summary>🧯 예외 처리 흐름 제어</summary>
+
+- 🔗 [Spring EXCEPTION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20EXCEPTION)
+
+</details>
+
+<details>
+<summary>🗄️ 데이터베이스 연동 및 관리</summary>
+
+- 🔗 [Spring DATASOURCE](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20DATASOURCE)
+- 🔗 [Spring MYBATIS](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20MYBATIS)
+
+</details>
+
 </details>
 
 ---
