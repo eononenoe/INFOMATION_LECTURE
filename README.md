@@ -5,7 +5,7 @@
 ---
  
 <details>
-<summary>📂 SW-BASIC 정리</summary>
+<summary>📂 SW-BASIC 정리</summary>  
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC)
 
