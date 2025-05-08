@@ -28,3 +28,38 @@
     - MYBATIS
     - mapper
         - MemoMapper
+
+- ## Day_84     
+    - INIT
+    - config
+        - DataSourceConfig
+        - MybatisConfig
+    - PARAM
+    - controller
+        - ExceptionTestController
+        - HomeController
+        - MemoController
+        - ParameterTestController
+    - VALIDATION
+    - exception
+        - GlobalExceptionHandler
+    - dto
+        - MemoDto
+        - PersonDto
+    - EXCEPTION
+    - exception
+        - GlobalExceptionHandler
+    - DATASOURCE
+    - mapper
+        - MemoMapper
+    - repository
+        - BookRepository
+        - LendRepository
+        - UserRepository
+    - JPA_ENTITY
+    - entity
+        - Book
+        - Lend
+        - User
+
+- ## Day_85    
