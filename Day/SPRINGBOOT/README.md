@@ -62,4 +62,21 @@
         - Lend
         - User
 
-- ## Day_85    
+- ## Day_85
+    - INIT
+    - config
+        - JpaConfig
+        - TxConfig
+    - DATASOURCE
+    - repository
+        - BookRepository
+        - LendRepository
+        - MemoRepository
+    - JPA_ENTITY
+    - entity
+        - Book
+        - Lend
+        - Memo
+    - SERVICE
+    - service
+        - TxTestService
