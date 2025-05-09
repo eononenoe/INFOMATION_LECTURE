@@ -80,3 +80,15 @@
     - SERVICE
     - service
         - TxTestService
+
+- ## Day_86
+    - JAVA
+    - demo
+        - DemoApplication
+    - C01OpenData
+        - OpenData01Controller
+        - OpenData02Controller
+    - VIEW
+    - openData
+        - forcast.html
+        - unexpected.html
