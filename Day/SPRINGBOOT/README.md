@@ -92,3 +92,29 @@
     - openData
         - forcast.html
         - unexpected.html
+
+- ## Day_87
+    - JAVA
+    - demo
+        - DemoApplication
+    - C01OpenData
+        - OpenData01Controller
+        - OpenData02Controller
+        - OpenData03Controller
+    - bus
+        - BUSResult
+    - C02OpenWeatherMap
+        - OpenWeatherController
+    - C03Leatlet
+        - LeafletController
+    - C04Kakao
+        - C01KakaoMapController
+    - VIEW
+    - map
+        - 01.html
+        - 02.html
+    - leaflet
+        - index.html
+    - openData
+        - forcast.html
+        - unexpected.html
