@@ -118,3 +118,28 @@
     - openData
         - forcast.html
         - unexpected.html
+
+- ## Day_88
+    - JAVA
+    - C04Kakao
+        - C02KakaoLoginController
+    - VIEW
+    - kakao
+        - main.html
+
+- ## Day_89
+    - JAVA
+    - C05Naver
+        - C01NaverLoginController
+        - C02NaverSearchController
+    - C06Google
+        - C01GoogleMailAPIController
+        - C02GoogleCalendarAPIController
+    - VIEW
+    - google
+        - cal.html
+    - kakao
+        - channel.html
+        - main.html
+    - naver
+        - main.html
