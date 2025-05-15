@@ -174,8 +174,8 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/naver/search")
 public class C02NaverSearchController {
 
-    private String NAVER_CLIENT_ID="pZnddgw3jqhTxOWnxS3N";
-    private String NAVER_CLIENT_SECRET="MHI5GVxQkO";
+    private String NAVER_CLIENT_ID="";
+    private String NAVER_CLIENT_SECRET="";
 
     @GetMapping("/book/{keyword}")
     @ResponseBody
