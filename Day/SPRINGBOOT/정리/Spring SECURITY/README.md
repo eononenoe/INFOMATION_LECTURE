@@ -7,7 +7,7 @@
 
 ---
 
-## 1. 환경 차이
+## 환경 차이
 
 | 그룹                           | STS3(Spring 5.x)    | Spring Boot 3.x                  |
 | ---------------------------- | ------------------- | -------------------------------- |
@@ -19,7 +19,7 @@
 
 ---
 
-## 2. 의존성 설정
+## 의존성 설정
 
 ### Spring 5.x
 
@@ -45,7 +45,7 @@
 
 ---
 
-## 3. 보안 설정 방식
+## 보안 설정 방식
 
 ### Spring 5.x
 
@@ -88,7 +88,7 @@ public class SecurityConfig {
 
 ---
 
-## 4. 기본 로그인 동작 차이
+## 기본 로그인 동작 차이
 
 | 항목          | STS3                              | Spring Boot 3.x                              |
 | ----------- | --------------------------------- | -------------------------------------------- |
@@ -98,7 +98,7 @@ public class SecurityConfig {
 
 ---
 
-## 5. CSRF(Cross Site Request Forgery)
+## CSRF(Cross Site Request Forgery)
 
 ### 개념
 
@@ -130,7 +130,7 @@ http.csrf().disable();
 
 ---
 
-## 6. CORS(Cross-Origin Resource Sharing)
+## CORS(Cross-Origin Resource Sharing)
 
 ### 개념
 
@@ -172,7 +172,7 @@ http.cors();
 
 ---
 
-## 7. OAUTH2 인증 흐름 요약
+## OAUTH2 인증 흐름 요약
 
 1. 사용자가 로그인 버튼 클릭
 2. 클라이언트가 Authorization Server에 인증 요청 (구글, 카카오, 네이버 등)
@@ -196,7 +196,7 @@ http.oauth2Login(oauth2 ->
 
 ---
 
-## 8. JWT + Redis 구조 요약
+## JWT + Redis 구조 요약
 
 | 구성 요소                  | 설명                                       |
 | ---------------------- | ---------------------------------------- |
@@ -221,7 +221,7 @@ redisTemplate.delete("RT:user123");
 
 ---
 
-## 9. 실습 요약 포인트
+## 실습 요약 포인트
 
 * Spring Boot 3.x에서는 모든 보안 구성은 JavaConfig 기반 람다식으로 정리됨
 * WebSecurityConfigurerAdapter 폐지됨 → SecurityFilterChain 사용
