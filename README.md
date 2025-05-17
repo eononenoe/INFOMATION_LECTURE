@@ -419,25 +419,37 @@
 </details>
 
 <details>
-<summary>🧭 Spring MVC 구조 및 핵심 개념</summary>
-
-- 🔗 [Spring PARAM](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20PARAM)
-- 🔗 [Spring VALIDATION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20VALIDATION)
-
-</details>
-
-<details>
-<summary>🧯 예외 처리 흐름 제어</summary>
-
-- 🔗 [Spring EXCEPTION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20EXCEPTION)
-
-</details>
-
-<details>
-<summary>🗄️ 데이터베이스 연동 및 관리</summary>
+<summary>💾 데이터 처리</summary>
 
 - 🔗 [Spring DATASOURCE](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20DATASOURCE)
 - 🔗 [Spring MYBATIS](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20MYBATIS)
+- 🔗 [Spring JPA](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20JPA)
+- 🔗 [Spring TX]()
+
+</details>
+
+<details>
+<summary>🧩 웹 및 요청 처리</summary>
+
+- 🔗 [Spring PARAM](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20PARAM)
+- 🔗 [Spring RESTfulAPI](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20RESTfulAPI)
+- 🔗 [Spring THYMELEAF](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20THYMELEAF)
+
+</details>
+
+<details>
+<summary>🔒 보안</summary>
+
+- 🔗 [Spring SECURITY]()
+
+</details>
+
+<details>
+<summary>⚠️ 예외 및 검증</summary>
+
+- 🔗 [Spring EXCEPTION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20EXCEPTION)
+- 🔗 [Spring VALIDATION](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20VALIDATION)
+
 
 </details>
 
