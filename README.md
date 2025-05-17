@@ -440,7 +440,7 @@
 <details>
 <summary>🔒 보안</summary>
 
-- 🔗 [Spring SECURITY]()
+- 🔗 [Spring SECURITY](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SPRINGBOOT/%EC%A0%95%EB%A6%AC/Spring%20SECURITY)
 
 </details>
 
