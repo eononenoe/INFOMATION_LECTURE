@@ -455,8 +455,10 @@
 
 </details>
 
+---
+
 <details>
-<summary>📂 STS3 정리</summary>
+<summary>📂 REACT 정리</summary>
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT)
 
