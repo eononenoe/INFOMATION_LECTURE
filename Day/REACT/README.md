@@ -59,3 +59,30 @@
             - setupTests.js
         - src/Condition
             - 01Basic.jsx
+
+- ## Day_95
+    - 06
+        - src
+            - App.js
+            - App.test.js
+            - index.js
+            - reportWebVitals.js
+            - setupTests.js
+        - src/Components
+            - About.jsx
+            - Contact.jsx
+            - Home.jsx
+    - 07
+        - src
+            - App.js
+            - App.test.js
+            - index.js
+            - reportWebVitals.js
+            - setupTests.js
+        - src/Components
+            - MyContext.jsx
+            - MyProvider.jsx
+            - Parent_01.jsx
+            - Parent_02.jsx
+            - Son_01.jsx
+            - Son_02.jsx
