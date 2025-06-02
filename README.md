@@ -18,8 +18,8 @@
 
 </details> 
 
-<details>
-<summary>🧭 라우팅 개념</summary>
+<details> 
+<summary>🧭 라우팅 개념</summary> 
 
 - 🔗 [Routing Protocol 관련 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/Routing%20Protocol%20관련%20개념%20정리)
 - 🔗 [Static & Default Routing 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/Static%20&%20Default%20Routing%20정리)
