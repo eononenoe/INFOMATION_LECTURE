@@ -27,7 +27,7 @@
 </details> 
 
 <details>
-<summary>🗃 데이터베이스 기초 및 실습</summary>
+<summary>🗃 데이터베이스 기초 및 실습</summary> 
 
 - 🔗 [정보 피라미드 & 데이터베이스 기초](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/%EC%A0%95%EB%B3%B4%20%ED%94%BC%EB%9D%BC%EB%AF%B8%EB%93%9C%20%26%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EC%B4%88)
 - 🔗 [MySQL 내부 구조 & Cmd 실습](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/MySQL%20%EB%82%B4%EB%B6%80%20%EA%B5%AC%EC%A1%B0%20%26%20Cmd%20%EC%8B%A4%EC%8A%B5)
