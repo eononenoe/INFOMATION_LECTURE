@@ -24,7 +24,7 @@
 - 🔗 [Routing Protocol 관련 개념 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/Routing%20Protocol%20관련%20개념%20정리)
 - 🔗 [Static & Default Routing 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/Static%20&%20Default%20Routing%20정리)
 
-</details> 
+</details>  
 
 <details>
 <summary>🗃 데이터베이스 기초 및 실습</summary> 
