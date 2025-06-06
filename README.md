@@ -16,7 +16,7 @@
 - 🔗 [IPv4 주소 체계와 서브넷 마스크 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/IPv4%20주소%20체계와%20서브넷%20마스크%20정리)
 - 🔗 [서버, DNS, Gateway, HTTP - 웹 통신의 핵심 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/서버,%20DNS,%20Gateway,%20HTTP%20-%20웹%20통신의%20핵심%20정리)
 
-</details> 
+</details>  
 
 <details> 
 <summary>🧭 라우팅 개념</summary> 
