@@ -7,7 +7,7 @@
 <details> 
 <summary>📂 SW-BASIC 정리</summary> 
 
-- 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC) 
+- 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC)  
 
 <details> 
 <summary>🌐 네트워크 기초</summary>  
