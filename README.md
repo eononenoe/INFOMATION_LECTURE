@@ -9,7 +9,7 @@
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC)  
 
-<details>  
+<details>   
 <summary>🌐 네트워크 기초</summary>  
 
 - 🔗 [OSI 7계층 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/정리/OSI%207계층%20정리)
