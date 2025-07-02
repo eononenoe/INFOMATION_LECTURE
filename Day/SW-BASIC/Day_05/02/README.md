@@ -11,7 +11,7 @@ software : hardware 자원을 이용해서 특정 목적달성위해 사용되�
 	file 관리..
 	
 	-APPlication : 사용자 요구사항을 만족하는 프로그램
-
+ 
 ```
 
 ---
