@@ -462,16 +462,29 @@
 
 - 🔗 [학습 일정 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT)
 
-<details>
-<summary>정리 전</summary>
+<details> 
+<summary>🛠 Node.js 기본</summary>
  
 - 🔗 [Node 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT/%EC%A0%95%EB%A6%AC/Node%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC)
 - 🔗 [Node npm 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT/%EC%A0%95%EB%A6%AC/Node%20npm%20%EC%A0%95%EB%A6%AC)
+</details>
+
+<details>
+ <summary>⚙️ React 기본</summary>
+
 - 🔗 [React 기초 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT/%EC%A0%95%EB%A6%AC/React%20%EA%B8%B0%EC%B4%88%20%EC%A0%95%EB%A6%AC)
 - 🔗 [React PROJECTINIT 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT/%EC%A0%95%EB%A6%AC/React%20PROJECTINIT%20%EC%A0%95%EB%A6%AC)
 - 🔗 [React JSX 정리](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/REACT/%EC%A0%95%EB%A6%AC/React%20JSX%20%20%EC%A0%95%EB%A6%AC)
 
 </details>
+</details>
+
+---
+
+<details>
+<summary>📂 정처산기 문제풀이</summary>
+
+- 🔗 [React 기초 정리]()
 
 </details>
 
