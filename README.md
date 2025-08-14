@@ -484,7 +484,7 @@
 <details>
 <summary>📂 정처산기 문제풀이</summary>
 
-- 🔗 [React 기초 정리]()
+- 🔗 [정처산기 문제풀이](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/PROBLEM-SOLVING)
 
 </details>
 
