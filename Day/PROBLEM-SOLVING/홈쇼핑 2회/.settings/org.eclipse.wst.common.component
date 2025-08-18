@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="홈쇼핑 2회">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="홈쇼핑_2회"/>
+        <property name="java-output-path" value="/홈쇼핑 2회/build/classes"/>
+    </wb-module>
+</project-modules>
