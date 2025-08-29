@@ -38,7 +38,7 @@
 </details>
 
 <details>
-<summary>⚙️ 웹 개발 환경</summary>
+<summary>⚙️ 웹 개발 환경</summary> 
 
 - 🔗 [미들웨어 & 개발 환경 구축 정리 (JAVA, Tomcat, Eclipse)](https://github.com/eononenoe/INFOMATION_LECTURE/tree/main/Day/SW-BASIC/%EC%A0%95%EB%A6%AC/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4%20%26%20%EA%B0%9C%EB%B0%9C%20%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%B6%95%20%EC%A0%95%EB%A6%AC%20(JAVA%2C%20Tomcat%2C%20Eclipse))
 
